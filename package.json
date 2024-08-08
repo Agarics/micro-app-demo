@@ -1,7 +1,7 @@
 {
-  "name": "bim-platform",
+  "name": "micro-app-demo",
   "version": "1.0.0",
-  "description": "bim platform",
+  "description": "micro-app",
   "private": true,
   "type": "module",
   "scripts": {
