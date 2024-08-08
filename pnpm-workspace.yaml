@@ -1,0 +1,10 @@
+packages:
+  - "internal/*"
+  - "internal/lint-configs/*"
+  - "packages/*"
+  - "packages/base/*"
+  - "packages/ui-kit/*"
+  - "apps/*"
+  - "scripts/*"
+  - "shared/*"
+  - "shared/effects/*"

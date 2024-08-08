@@ -1,0 +1,152 @@
+{
+  "folders": [
+    {
+      "name": "@bim/backend-mock",
+      "path": "apps/backend-mock",
+    },
+    {
+      "name": "base",
+      "path": "apps/base",
+    },
+    {
+      "name": "@bim/web",
+      "path": "apps/web-antd",
+    },
+    {
+      "name": "@bim/commitlint-config",
+      "path": "internal/lint-configs/commitlint-config",
+    },
+    {
+      "name": "@bim/eslint-config",
+      "path": "internal/lint-configs/eslint-config",
+    },
+    {
+      "name": "@bim/prettier-config",
+      "path": "internal/lint-configs/prettier-config",
+    },
+    {
+      "name": "@bim/stylelint-config",
+      "path": "internal/lint-configs/stylelint-config",
+    },
+    {
+      "name": "@bim/node-utils",
+      "path": "internal/node-utils",
+    },
+    {
+      "name": "@bim/tailwind-config",
+      "path": "internal/tailwind-config",
+    },
+    {
+      "name": "@bim/tsconfig",
+      "path": "internal/tsconfig",
+    },
+    {
+      "name": "@bim/vite-config",
+      "path": "internal/vite-config",
+    },
+    {
+      "name": "@bim-core/design",
+      "path": "packages/base/design",
+    },
+    {
+      "name": "@bim-core/icons",
+      "path": "packages/base/icons",
+    },
+    {
+      "name": "@bim-core/shared",
+      "path": "packages/base/shared",
+    },
+    {
+      "name": "@bim-core/typings",
+      "path": "packages/base/typings",
+    },
+    {
+      "name": "@bim-core/composables",
+      "path": "packages/composables",
+    },
+    {
+      "name": "@bim-core/preferences",
+      "path": "packages/preferences",
+    },
+    {
+      "name": "@bim-core/layout-ui",
+      "path": "packages/ui-kit/layout-ui",
+    },
+    {
+      "name": "@bim-core/menu-ui",
+      "path": "packages/ui-kit/menu-ui",
+    },
+    {
+      "name": "@bim-core/shadcn-ui",
+      "path": "packages/ui-kit/shadcn-ui",
+    },
+    {
+      "name": "@bim-core/tabs-ui",
+      "path": "packages/ui-kit/tabs-ui",
+    },
+    {
+      "name": "@bim/turbo-run",
+      "path": "scripts/turbo-run",
+    },
+    {
+      "name": "@bim/vsh",
+      "path": "scripts/vsh",
+    },
+    {
+      "name": "@bim/constants",
+      "path": "shared/constants",
+    },
+    {
+      "name": "@bim/access",
+      "path": "shared/effects/access",
+    },
+    {
+      "name": "@bim/chart-ui",
+      "path": "shared/effects/chart-ui",
+    },
+    {
+      "name": "@bim/common-ui",
+      "path": "shared/effects/common-ui",
+    },
+    {
+      "name": "@bim/hooks",
+      "path": "shared/effects/hooks",
+    },
+    {
+      "name": "@bim/layouts",
+      "path": "shared/effects/layouts",
+    },
+    {
+      "name": "@bim/request",
+      "path": "shared/effects/request",
+    },
+    {
+      "name": "@bim/icons",
+      "path": "shared/icons",
+    },
+    {
+      "name": "@bim/locales",
+      "path": "shared/locales",
+    },
+    {
+      "name": "@bim/preferences",
+      "path": "shared/preferences",
+    },
+    {
+      "name": "@bim/stores",
+      "path": "shared/stores",
+    },
+    {
+      "name": "@bim/styles",
+      "path": "shared/styles",
+    },
+    {
+      "name": "@bim/types",
+      "path": "shared/types",
+    },
+    {
+      "name": "@bim/utils",
+      "path": "shared/utils",
+    },
+  ],
+}

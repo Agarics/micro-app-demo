@@ -1,0 +1,13 @@
+{
+  "name": "@bim/backend-mock",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "nitro dev",
+    "build": "nitro build"
+  },
+  "dependencies": {
+    "nitropack": "^2.9.7"
+  }
+}

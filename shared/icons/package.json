@@ -1,0 +1,14 @@
+{
+  "name": "@bim/icons",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@bim-core/icons": "workspace:*"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@bim/access",
+  "version": "5.0.0",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@bim/preferences": "workspace:*",
+    "@bim/stores": "workspace:*",
+    "@bim/types": "workspace:*",
+    "@bim/utils": "workspace:*",
+    "vue": "^3.4.36"
+  }
+}

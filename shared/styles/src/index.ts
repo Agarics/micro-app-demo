@@ -1,0 +1,1 @@
+import '@bim-core/design';

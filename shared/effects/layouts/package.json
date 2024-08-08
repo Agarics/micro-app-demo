@@ -1,0 +1,31 @@
+{
+  "name": "@bim/layouts",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@bim-core/layout-ui": "workspace:*",
+    "@bim-core/menu-ui": "workspace:*",
+    "@bim-core/shadcn-ui": "workspace:*",
+    "@bim-core/tabs-ui": "workspace:*",
+    "@bim/constants": "workspace:*",
+    "@bim/hooks": "workspace:*",
+    "@bim/icons": "workspace:*",
+    "@bim/locales": "workspace:*",
+    "@bim/preferences": "workspace:*",
+    "@bim/stores": "workspace:*",
+    "@bim/types": "workspace:*",
+    "@bim/utils": "workspace:*",
+    "@vueuse/core": "^10.11.0",
+    "vue": "^3.4.36",
+    "vue-router": "^4.4.3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@bim/utils",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@bim-core/shared": "workspace:*",
+    "@bim-core/typings": "workspace:*",
+    "vue-router": "^4.4.3"
+  }
+}
