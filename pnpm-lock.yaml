@@ -161,6 +161,15 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3(vue@3.4.36(typescript@5.5.4))
 
+  apps/home:
+    dependencies:
+      vue:
+        specifier: ^3.4.36
+        version: 3.4.36(typescript@5.5.4)
+      vue-router:
+        specifier: ^4.4.3
+        version: 4.4.3(vue@3.4.36(typescript@5.5.4))
+
   apps/web-antd:
     dependencies:
       '@bim/access':

@@ -1,10 +1,3 @@
-import { initPreferences } from '@bim/preferences';
-import { unmountGlobalLoading } from '@bim/utils';
-
-import microApp from '@micro-zoe/micro-app';
-
-import { overridesPreferences } from './preferences';
-
 /**
  * 应用初始化完成之后再进行页面加载渲染
  */
@@ -15,24 +8,10 @@ async function initApplication() {
   const appVersion = import.meta.env.VITE_APP_VERSION;
   const namespace = `${import.meta.env.VITE_APP_NAMESPACE}-${appVersion}-${env}`;
 
-  // app偏好设置初始化
-  await initPreferences({
-    namespace,
-    overrides: overridesPreferences,
-  });
-
   // 启动应用并挂载
   // vue应用主要逻辑及视图
   const { bootstrap } = await import('./bootstrap');
   await bootstrap(namespace);
-
-  // 移除并销毁loading
-  unmountGlobalLoading();
 }
-
-microApp.start({
-  'disable-memory-router': true, // 关闭虚拟路由系统
-  'disable-patch-request': true, // 关闭对子应用请求的拦截
-});
 
 initApplication();

@@ -4,14 +4,14 @@ import { $t } from '#/locales';
 
 const routes: RouteRecordRaw[] = [
   {
-    component: () => import('#/views/dashboard/index.vue'),
+    component: () => import('#/views/home/index.vue'),
     meta: {
       affixTab: true,
       icon: 'lucide:area-chart',
       title: $t('page.dashboard.analytics'),
     },
-    name: 'DashboardHome',
-    path: '/dashboard',
+    name: 'Home',
+    path: '/home',
   },
 ];
 

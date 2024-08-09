@@ -53,6 +53,11 @@ async function loadCommonPlugins(
             defineModel: true,
             // propsDestructure: true,
           },
+          template: {
+            compilerOptions: {
+              isCustomElement: (tag) => tag.startsWith('micro-app'),
+            },
+          },
         }),
         viteVueJsx(),
       ],

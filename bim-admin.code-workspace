@@ -9,6 +9,10 @@
       "path": "apps/base",
     },
     {
+      "name": "home",
+      "path": "apps/home",
+    },
+    {
       "name": "@bim/web",
       "path": "apps/web-antd",
     },

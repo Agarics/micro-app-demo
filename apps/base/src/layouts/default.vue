@@ -4,7 +4,7 @@ import type { RouteLocationNormalizedLoaded } from 'vue-router';
 import { RouterLink, RouterView } from 'vue-router';
 
 import { Spinner } from '@bim/common-ui';
-import { useContentHeight } from '@bim/hooks';
+import { useContentHeightListener } from '@bim/hooks';
 import { preferences, usePreferences } from '@bim/preferences';
 
 import logoUrl from '#/assets/vue.svg';
@@ -15,7 +15,8 @@ defineOptions({ name: 'LayoutDefault' });
 
 const { keepAlive } = usePreferences();
 const { spinning } = useContentSpinner();
-const { contentStyles } = useContentHeight();
+
+const { contentElement } = useContentHeightListener();
 
 // 页面切换动画
 function getTransitionName(_route: RouteLocationNormalizedLoaded) {
@@ -47,23 +48,21 @@ function getTransitionName(_route: RouteLocationNormalizedLoaded) {
             <RouterLink to="/dashboard"><img :src="logoUrl" /></RouterLink>
             <ul class="ml-[20px] flex items-center">
               <li class="mr-[20px]">
-                <RouterLink to="/home"> home </RouterLink>
-              </li>
-              <li class="mr-[20px]">
-                <RouterLink to="/home2"> home2 </RouterLink>
+                <RouterLink to="/home">home</RouterLink>
               </li>
             </ul>
           </div>
         </header>
       </div>
       <main
+        ref="contentElement"
         class="bg-background-deep flex-1 transition-[margin-top] duration-200"
       >
         <div class="relative h-full">
           <Spinner
             v-if="preferences.transition.loading"
             :spinning="spinning"
-            :style="contentStyles"
+            class="h-full bg-inherit"
           />
           <RouterView v-slot="{ Component, route }">
             <Transition :name="getTransitionName(route)" appear mode="out-in">
