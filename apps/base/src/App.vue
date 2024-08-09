@@ -1,32 +1,40 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+<script lang="ts" setup>
+import { computed } from 'vue';
+
+import { useAntdDesignTokens } from '@bim/hooks';
+import { preferences, usePreferences } from '@bim/preferences';
+
+import { App, ConfigProvider, theme } from 'ant-design-vue';
+
+import PageLayout from '#/components/page-layout/index.vue';
+import { antdLocale } from '#/locales';
+
+defineOptions({ name: 'App' });
+
+const { isDark } = usePreferences();
+const { tokens } = useAntdDesignTokens();
+
+const tokenTheme = computed(() => {
+  const algorithm = isDark.value
+    ? [theme.darkAlgorithm]
+    : [theme.defaultAlgorithm];
+
+  // antd 紧凑模式算法
+  if (preferences.app.compact) {
+    algorithm.push(theme.compactAlgorithm);
+  }
+
+  return {
+    algorithm,
+    token: tokens,
+  };
+});
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img alt="Vite logo" class="logo" src="/vite.svg" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img alt="Vue logo" class="logo vue" src="./assets/vue.svg" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <ConfigProvider :locale="antdLocale" :theme="tokenTheme">
+    <App>
+      <PageLayout />
+    </App>
+  </ConfigProvider>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  transition: filter 300ms;
-  will-change: filter;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

@@ -1,11 +1,25 @@
 import { defineConfig } from '@bim/vite-config';
+import { resolve } from 'path'
 
 export default defineConfig(async () => {
   return {
     application: {},
     vite: {
+      resolve: {
+        alias: {
+          '#': resolve(__dirname,  'src')
+        }
+      },
       server: {
-        port: 9527,
+        proxy: {
+          '/api': {
+            changeOrigin: true,
+            rewrite: (path) => path.replace(/^\/api/, ''),
+            // mock代理目标地址
+            target: 'http://localhost:5320/api',
+            ws: true,
+          },
+        },
       },
     },
   };
