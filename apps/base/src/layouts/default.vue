@@ -1,11 +1,7 @@
 <script lang="ts" setup>
-import type { RouteLocationNormalizedLoaded } from 'vue-router';
-
 import { RouterLink, RouterView } from 'vue-router';
 
 import { Spinner } from '@bim/common-ui';
-import { useContentHeightListener } from '@bim/hooks';
-import { preferences, usePreferences } from '@bim/preferences';
 
 import logoUrl from '#/assets/vue.svg';
 
@@ -13,26 +9,7 @@ import { useContentSpinner } from './hooks/use-content-spinner';
 
 defineOptions({ name: 'LayoutDefault' });
 
-const { keepAlive } = usePreferences();
 const { spinning } = useContentSpinner();
-
-const { contentElement } = useContentHeightListener();
-
-// 页面切换动画
-function getTransitionName(_route: RouteLocationNormalizedLoaded) {
-  // 如果偏好设置未设置，则不使用动画
-  const { tabbar, transition } = preferences;
-  const transitionName = transition.name;
-  if (!transitionName || !transition.enable) {
-    return;
-  }
-
-  // 标签页未启用或者未开启缓存，则使用全局配置动画
-  if (!tabbar.enable || !keepAlive) {
-    return transitionName;
-  }
-  return transitionName;
-}
 </script>
 
 <template>
@@ -42,7 +19,7 @@ function getTransitionName(_route: RouteLocationNormalizedLoaded) {
     >
       <div class="overflow-hidden transition-all duration-200">
         <header
-          class="border-border bg-background top-0 flex w-full flex-[0_0_auto] items-center border-b transition-[margin-top] duration-200"
+          class="border-border bg-background z-1000 fixed top-0 flex w-full flex-[0_0_auto] items-center border-b transition-[margin-top] duration-200"
         >
           <div class="flex h-[60px] items-center justify-between px-[20px]">
             <RouterLink to="/dashboard"><img :src="logoUrl" /></RouterLink>
@@ -50,22 +27,20 @@ function getTransitionName(_route: RouteLocationNormalizedLoaded) {
               <li class="mr-[20px]">
                 <RouterLink to="/home">home</RouterLink>
               </li>
+              <li class="mr-[20px]">
+                <RouterLink to="/ant">ant</RouterLink>
+              </li>
             </ul>
           </div>
         </header>
       </div>
       <main
-        ref="contentElement"
-        class="bg-background-deep flex-1 transition-[margin-top] duration-200"
+        class="bg-background-deep flex-1 pt-[60px] transition-[margin-top] duration-200"
       >
         <div class="relative h-full">
-          <Spinner
-            v-if="preferences.transition.loading"
-            :spinning="spinning"
-            class="h-full bg-inherit"
-          />
+          <Spinner :spinning="spinning" class="h-full bg-inherit" />
           <RouterView v-slot="{ Component, route }">
-            <Transition :name="getTransitionName(route)" appear mode="out-in">
+            <Transition appear mode="out-in" name="fade-in">
               <component :is="Component" :key="route.name" />
             </Transition>
           </RouterView>
