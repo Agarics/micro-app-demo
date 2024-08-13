@@ -10,7 +10,6 @@ async function runDepcheck() {
     packages.map(async (pkg) => {
       if (
         [
-          '@bim/commitlint-config',
           '@bim/eslint-config',
           '@bim/lint-staged-config',
           '@bim/node-utils',

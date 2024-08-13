@@ -17,10 +17,6 @@
       "path": "apps/web-antd",
     },
     {
-      "name": "@bim/commitlint-config",
-      "path": "internal/lint-configs/commitlint-config",
-    },
-    {
       "name": "@bim/eslint-config",
       "path": "internal/lint-configs/eslint-config",
     },

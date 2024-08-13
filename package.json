@@ -14,7 +14,7 @@
     "check:dep": "vsh check-dep",
     "check:type": "turbo run typecheck",
     "clean": "vsh clean",
-    "commit": "czg",
+    "commit": "cz",
     "dev": "turbo-run dev",
     "format": "vsh lint --format",
     "lint": "vsh lint",
@@ -26,7 +26,6 @@
     "update:deps": "pnpm update --latest --recursive"
   },
   "devDependencies": {
-    "@bim/commitlint-config": "workspace:*",
     "@bim/eslint-config": "workspace:*",
     "@bim/prettier-config": "workspace:*",
     "@bim/stylelint-config": "workspace:*",
@@ -35,13 +34,17 @@
     "@bim/turbo-run": "workspace:*",
     "@bim/vite-config": "workspace:*",
     "@bim/vsh": "workspace:*",
+    "@commitlint/cli": "^19.4.0",
     "@ls-lint/ls-lint": "^2.2.3",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.1.0",
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
+    "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "cross-env": "^7.0.3",
     "cspell": "^8.13.1",
+    "cz-customizable": "^7.2.1",
     "is-ci": "^3.0.1",
     "jsdom": "^24.1.1",
     "lint-staged": "^15.2.8",
@@ -58,6 +61,14 @@
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
   },
   "packageManager": "pnpm@9.7.0",
   "pnpm": {
