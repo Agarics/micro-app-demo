@@ -16,7 +16,7 @@ import { BimAdminLayout } from '@bim-core/layout-ui';
 import { BimBackTop, BimLogo, Toaster } from '@bim-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
-import { LayoutContent } from './content';
+import { LayoutContent, LayoutContentSpinner } from './content';
 import { Copyright } from './copyright';
 import { LayoutFooter } from './footer';
 import { LayoutHeader } from './header';
@@ -27,7 +27,6 @@ import {
   useExtraMenu,
   useMixedMenu,
 } from './menu';
-import { LayoutTabbar } from './tabbar';
 
 defineOptions({ name: 'BasicLayout' });
 
@@ -41,17 +40,19 @@ const {
   isSideMixedNav,
   layout,
   sidebarCollapsed,
+  theme,
 } = usePreferences();
 const userStore = useUserStore();
 const { updateWatermark } = useWatermark();
 const lockStore = useLockStore();
 
-const headerMenuTheme = computed(() => {
-  return isDark.value ? 'dark' : 'light';
+const sidebarTheme = computed(() => {
+  const dark = isDark.value || preferences.theme.semiDarkSidebar;
+  return dark ? 'dark' : 'light';
 });
 
-const theme = computed(() => {
-  const dark = isDark.value || preferences.theme.semiDarkMenu;
+const headerTheme = computed(() => {
+  const dark = isDark.value || preferences.theme.semiDarkHeader;
   return dark ? 'dark' : 'light';
 });
 
@@ -160,6 +161,7 @@ const headerSlots = computed(() => {
     :footer-fixed="preferences.footer.fixed"
     :header-hidden="preferences.header.hidden"
     :header-mode="preferences.header.mode"
+    :header-theme="headerTheme"
     :header-toggle-sidebar-button="preferences.widget.sidebarToggle"
     :header-visible="preferences.header.enable"
     :is-mobile="preferences.app.isMobile"
@@ -170,11 +172,8 @@ const headerSlots = computed(() => {
     :sidebar-expand-on-hover="preferences.sidebar.expandOnHover"
     :sidebar-extra-collapse="preferences.sidebar.extraCollapse"
     :sidebar-hidden="preferences.sidebar.hidden"
-    :sidebar-semi-dark="preferences.theme.semiDarkMenu"
-    :sidebar-theme="theme"
+    :sidebar-theme="sidebarTheme"
     :sidebar-width="preferences.sidebar.width"
-    :tabbar-enable="preferences.tabbar.enable"
-    :tabbar-height="preferences.tabbar.height"
     @side-mouse-leave="handleSideMouseLeave"
     @toggle-sidebar="toggleSidebar"
     @update:sidebar-collapse="
@@ -192,14 +191,6 @@ const headerSlots = computed(() => {
         updatePreferences({ sidebar: { extraCollapse: value } })
     "
   >
-    <template v-if="preferences.app.enablePreferences" #preferences>
-      <Preferences @clear-preferences-and-logout="clearPreferencesAndLogout" />
-    </template>
-
-    <template #floating-groups>
-      <BimBackTop />
-    </template>
-
     <!-- logo -->
     <template #logo>
       <BimLogo
@@ -208,7 +199,7 @@ const headerSlots = computed(() => {
         :collapsed="logoCollapsed"
         :src="preferences.logo.source"
         :text="preferences.app.name"
-        :theme="showHeaderNav ? headerMenuTheme : theme"
+        :theme="showHeaderNav ? headerTheme : theme"
       />
     </template>
     <!-- 头部区域 -->
@@ -230,7 +221,7 @@ const headerSlots = computed(() => {
             :default-active="headerActive"
             :menus="wrapperMenus(headerMenus)"
             :rounded="isMenuRounded"
-            :theme="headerMenuTheme"
+            :theme="headerTheme"
             class="w-full"
             mode="horizontal"
             @select="handleMenuSelect"
@@ -256,7 +247,7 @@ const headerSlots = computed(() => {
         :default-active="sidebarActive"
         :menus="wrapperMenus(sidebarMenus)"
         :rounded="isMenuRounded"
-        :theme="theme"
+        :theme="sidebarTheme"
         mode="vertical"
         @select="handleMenuSelect"
       />
@@ -267,7 +258,7 @@ const headerSlots = computed(() => {
         :active-path="extraActiveMenu"
         :menus="wrapperMenus(headerMenus)"
         :rounded="isMenuRounded"
-        :theme="theme"
+        :theme="sidebarTheme"
         @default-select="handleDefaultSelect"
         @enter="handleMenuMouseEnter"
         @select="handleMixedMenuSelect"
@@ -280,7 +271,7 @@ const headerSlots = computed(() => {
         :collapse="preferences.sidebar.extraCollapse"
         :menus="wrapperMenus(extraMenus)"
         :rounded="isMenuRounded"
-        :theme="theme"
+        :theme="sidebarTheme"
       />
     </template>
     <template #side-extra-title>
@@ -291,17 +282,15 @@ const headerSlots = computed(() => {
       />
     </template>
 
-    <template #tabbar>
-      <LayoutTabbar
-        v-if="preferences.tabbar.enable"
-        :show-icon="preferences.tabbar.showIcon"
-        :theme="theme"
-      />
-    </template>
-
     <!-- 主体内容 -->
     <template #content>
       <LayoutContent />
+    </template>
+    <template
+      v-if="preferences.transition.loading"
+      #content-overlay="{ overlayStyle }"
+    >
+      <LayoutContentSpinner :overlay-style="overlayStyle" />
     </template>
 
     <!-- 页脚 -->
@@ -325,6 +314,19 @@ const headerSlots = computed(() => {
       <Transition v-if="preferences.widget.lockScreen" name="slide-up">
         <slot v-if="lockStore.isLockScreen" name="lock-screen"></slot>
       </Transition>
+
+      <template
+        v-if="
+          preferences.app.enablePreferences &&
+          preferences.app.preferencesButtonPosition === 'fixed'
+        "
+      >
+        <Preferences
+          class="z-100 fixed bottom-20 right-0"
+          @clear-preferences-and-logout="clearPreferencesAndLogout"
+        />
+      </template>
+      <BimBackTop />
     </template>
   </BimAdminLayout>
 </template>

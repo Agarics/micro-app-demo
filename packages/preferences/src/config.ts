@@ -18,6 +18,7 @@ const defaultPreferences: Preferences = {
     locale: 'zh-CN',
     loginExpiredMode: 'modal',
     name: 'Bim Admin',
+    preferencesButtonPosition: 'fixed',
     watermark: false,
   },
   breadcrumb: {
@@ -29,7 +30,7 @@ const defaultPreferences: Preferences = {
   },
   copyright: {
     companyName: 'Bim',
-    companySiteLink: '',
+    companySiteLink: 'https://www.bim.pro',
     date: '2024',
     enable: true,
     icp: '',
@@ -87,9 +88,10 @@ const defaultPreferences: Preferences = {
     colorPrimary: 'hsl(231 98% 65%)',
     colorSuccess: 'hsl(144 57% 58%)',
     colorWarning: 'hsl(42 84% 61%)',
-    mode: 'dark',
+    mode: 'light',
     radius: '0.5',
-    semiDarkMenu: true,
+    semiDarkHeader: false,
+    semiDarkSidebar: true,
   },
   transition: {
     enable: true,

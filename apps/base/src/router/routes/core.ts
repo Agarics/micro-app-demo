@@ -1,7 +1,5 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { DEFAULT_HOME_PATH } from '@bim/constants';
-
 import { $t } from '#/locales';
 import Login from '#/views/authentication/login.vue';
 
@@ -21,12 +19,12 @@ const fallbackNotFoundRoute: RouteRecordRaw = {
 /** 基本路由，这些路由是必须存在的 */
 const coreRoutes: RouteRecordRaw[] = [
   {
+    component: () => import('#/views/dashboard/index.vue'),
     meta: {
       title: 'Root',
     },
     name: 'Root',
     path: '/',
-    redirect: DEFAULT_HOME_PATH,
   },
   {
     component: Login,

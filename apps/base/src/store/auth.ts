@@ -7,7 +7,7 @@ import { useRouter } from 'vue-router';
 import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@bim/constants';
 import { resetAllStores, useAccessStore, useUserStore } from '@bim/stores';
 
-import { notification } from 'ant-design-vue';
+import { ElNotification } from 'element-plus';
 import { defineStore } from 'pinia';
 
 import { getAccessCodesApi, getUserInfoApi, loginApi } from '#/api';
@@ -61,10 +61,10 @@ export const useAuthStore = defineStore('auth', () => {
         }
 
         if (userInfo?.realName) {
-          notification.success({
-            description: `${$t('authentication.loginSuccessDesc')}:${userInfo?.realName}`,
-            duration: 3,
-            message: $t('authentication.loginSuccess'),
+          ElNotification({
+            message: `${$t('authentication.loginSuccessDesc')}:${userInfo?.realName}`,
+            title: $t('authentication.loginSuccess'),
+            type: 'success',
           });
         }
       }

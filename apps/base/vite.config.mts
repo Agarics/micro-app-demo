@@ -1,14 +1,27 @@
+import { resolve } from 'node:path';
+
 import { defineConfig } from '@bim/vite-config';
-import { resolve } from 'path'
+
+import AutoImport from 'unplugin-auto-import/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+import Components from 'unplugin-vue-components/vite';
 
 export default defineConfig(async () => {
   return {
     application: {},
     vite: {
+      plugins: [
+        AutoImport({
+          resolvers: [ElementPlusResolver()],
+        }),
+        Components({
+          resolvers: [ElementPlusResolver()],
+        }),
+      ],
       resolve: {
         alias: {
-          '#': resolve(__dirname,  'src')
-        }
+          '#': resolve(import.meta.dirname, 'src'),
+        },
       },
       server: {
         proxy: {

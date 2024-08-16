@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@bim/preferences": "workspace:*",
-    "@vueuse/core": "^10.11.0",
+    "@vueuse/core": "^11.0.0",
     "echarts": "^5.5.1",
-    "vue": "^3.4.36"
+    "vue": "^3.4.38"
   }
 }

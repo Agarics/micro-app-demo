@@ -1,3 +1,3 @@
-export type * from './interface';
-
 export { default as BimSegmented } from './segmented.vue';
+
+export type * from './types';

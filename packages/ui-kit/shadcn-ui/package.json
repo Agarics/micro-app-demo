@@ -34,14 +34,14 @@
     }
   },
   "dependencies": {
+    "@bim-core/icons": "workspace:*",
     "@bim-core/shared": "workspace:*",
     "@bim-core/typings": "workspace:*",
-    "@bim/icons": "workspace:*",
     "@radix-icons/vue": "^1.0.0",
-    "@vueuse/core": "^10.11.0",
+    "@vueuse/core": "^11.0.0",
     "class-variance-authority": "^0.7.0",
-    "lucide-vue-next": "^0.424.0",
-    "radix-vue": "^1.9.3",
-    "vue": "^3.4.36"
+    "lucide-vue-next": "^0.428.0",
+    "radix-vue": "^1.9.4",
+    "vue": "^3.4.38"
   }
 }

@@ -16,6 +16,6 @@
     "@bim/stores": "workspace:*",
     "@bim/types": "workspace:*",
     "@bim/utils": "workspace:*",
-    "vue": "^3.4.36"
+    "vue": "^3.4.38"
   }
 }

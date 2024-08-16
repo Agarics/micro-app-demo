@@ -30,9 +30,9 @@
   },
   "dependencies": {
     "@bim-core/composables": "workspace:*",
+    "@bim-core/icons": "workspace:*",
     "@bim-core/shadcn-ui": "workspace:*",
     "@bim-core/typings": "workspace:*",
-    "@bim/icons": "workspace:*",
-    "vue": "^3.4.36"
+    "vue": "^3.4.38"
   }
 }

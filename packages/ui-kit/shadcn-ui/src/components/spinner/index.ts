@@ -1,1 +1,1 @@
-export { default as Spinner } from './spinner.vue';
+export { default as BimSpinner } from './spinner.vue';

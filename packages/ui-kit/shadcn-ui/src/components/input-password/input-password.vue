@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import { ref, useSlots } from 'vue';
 
-import { Eye, EyeOff } from '@bim/icons';
-import {
-  BimInput,
-  type InputProps,
-} from '@bim-core/shadcn-ui/components/input';
+import { Eye, EyeOff } from '@bim-core/icons';
 
 import { useForwardProps } from 'radix-vue';
 
+import { BimInput, type InputProps } from '../input';
 import PasswordStrength from './password-strength.vue';
 
 interface Props extends InputProps {}

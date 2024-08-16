@@ -3,8 +3,8 @@ import type { MenuItemProps } from '../interface';
 
 import { computed } from 'vue';
 
-import { ChevronDown, ChevronRight } from '@bim/icons';
 import { useNamespace } from '@bim-core/composables';
+import { ChevronDown, ChevronRight } from '@bim-core/icons';
 import { BimIcon } from '@bim-core/shadcn-ui';
 
 import { useMenuContext } from '../hooks';

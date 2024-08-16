@@ -5,7 +5,7 @@ import type { TabConfig, TabsProps } from '../../types';
 
 import { computed, ref, watch } from 'vue';
 
-import { MdiPin, X } from '@bim/icons';
+import { MdiPin, X } from '@bim-core/icons';
 import { BimContextMenu, BimIcon, BimScrollbar } from '@bim-core/shadcn-ui';
 
 interface Props extends TabsProps {}
@@ -72,9 +72,10 @@ function scrollIntoView() {
 <template>
   <div :style="style" class="tabs-chrome size-full flex-1 overflow-hidden pt-1">
     <BimScrollbar
+      id="tabs-scrollbar"
       class="tabs-chrome__scrollbar h-full"
       horizontal
-      scroll-bar-class="z-10"
+      scroll-bar-class="z-10 hidden"
     >
       <!-- footer -> 4px -->
       <div
@@ -109,7 +110,7 @@ function scrollIntoView() {
                 <!-- divider -->
                 <div
                   v-if="i !== 0 && tab.key !== active"
-                  class="tabs-chrome__divider bg-foreground/80 absolute left-[var(--gap)] top-1/2 z-0 h-4 w-[1px] translate-y-[-50%] transition-all"
+                  class="tabs-chrome__divider bg-foreground/60 absolute left-[var(--gap)] top-1/2 z-0 h-4 w-[1px] translate-y-[-50%] transition-all"
                 ></div>
                 <!-- background -->
                 <div

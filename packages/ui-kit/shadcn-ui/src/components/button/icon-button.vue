@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import type { ButtonVariants } from '@bim-core/shadcn-ui/components/ui/button';
+import type { ButtonVariants } from '../ui/button';
 
-import { computed, type HTMLAttributes, useSlots } from 'vue';
+import { computed, useSlots } from 'vue';
 
-import { BimTooltip } from '@bim-core/shadcn-ui/components/tooltip';
 import { cn } from '@bim-core/shared';
 
 import { type PrimitiveProps } from 'radix-vue';
 
+import { BimTooltip } from '../tooltip';
 import BimButton from './button.vue';
 
 interface Props extends PrimitiveProps {
-  class?: HTMLAttributes['class'];
+  class?: any;
   disabled?: boolean;
   onClick?: () => void;
   tooltip?: string;

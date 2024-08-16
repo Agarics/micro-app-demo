@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@bim-core/typings": "workspace:*",
-    "vue": "^3.4.36",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   }
 }

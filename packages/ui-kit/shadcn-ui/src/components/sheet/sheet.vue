@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { computed, useSlots } from 'vue';
 
-import {
-  BimButton,
-  BimIconButton,
-} from '@bim-core/shadcn-ui/components/button';
-import { BimScrollbar } from '@bim-core/shadcn-ui/components/scrollbar';
+import { X } from 'lucide-vue-next';
+
+import { BimButton, BimIconButton } from '../button';
+import { BimScrollbar } from '../scrollbar';
 import {
   Sheet,
   SheetClose,
@@ -15,9 +14,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@bim-core/shadcn-ui/components/ui/sheet';
-
-import { X } from 'lucide-vue-next';
+} from '../ui/sheet';
 
 interface Props {
   cancelText?: string;

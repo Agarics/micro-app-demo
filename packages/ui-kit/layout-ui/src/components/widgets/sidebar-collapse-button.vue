@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MdiMenuClose, MdiMenuOpen } from '@bim/icons';
+import { MdiMenuClose, MdiMenuOpen } from '@bim-core/icons';
 
 const collapsed = defineModel<boolean>('collapsed');
 

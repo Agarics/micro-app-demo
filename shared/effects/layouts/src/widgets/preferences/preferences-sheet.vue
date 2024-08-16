@@ -7,13 +7,14 @@ import type {
   LayoutHeaderModeType,
   LayoutType,
   NavigationStyleType,
+  PreferencesButtonPositionType,
   ThemeModeType,
 } from '@bim/types';
 import type { SegmentedItem } from '@bim-core/shadcn-ui';
 
 import { computed, ref } from 'vue';
 
-import { Copy, RotateCw, SwatchBook } from '@bim/icons';
+import { Copy, RotateCw, Settings } from '@bim/icons';
 import { $t, loadLocaleMessages } from '@bim/locales';
 import {
   clearPreferencesCache,
@@ -63,6 +64,9 @@ const appColorWeakMode = defineModel<boolean>('appColorWeakMode');
 const appContentCompact = defineModel<ContentCompactType>('appContentCompact');
 const appWatermark = defineModel<boolean>('appWatermark');
 const appEnableCheckUpdates = defineModel<boolean>('appEnableCheckUpdates');
+const appPreferencesButtonPosition = defineModel<PreferencesButtonPositionType>(
+  'appPreferencesButtonPosition',
+);
 
 const transitionProgress = defineModel<boolean>('transitionProgress');
 const transitionName = defineModel<string>('transitionName');
@@ -73,7 +77,8 @@ const themeColorPrimary = defineModel<string>('themeColorPrimary');
 const themeBuiltinType = defineModel<BuiltinThemeType>('themeBuiltinType');
 const themeMode = defineModel<ThemeModeType>('themeMode');
 const themeRadius = defineModel<string>('themeRadius');
-const themeSemiDarkMenu = defineModel<boolean>('themeSemiDarkMenu');
+const themeSemiDarkSidebar = defineModel<boolean>('themeSemiDarkSidebar');
+const themeSemiDarkHeader = defineModel<boolean>('themeSemiDarkHeader');
 
 const sidebarEnable = defineModel<boolean>('sidebarEnable');
 const sidebarWidth = defineModel<number>('sidebarWidth');
@@ -219,19 +224,21 @@ async function handleReset() {
 </script>
 
 <template>
-  <div class="z-100 fixed right-0 top-1/2">
+  <div>
     <BimSheet
       v-model:open="openPreferences"
       :description="$t('preferences.subtitle')"
       :title="$t('preferences.title')"
     >
       <template #trigger>
-        <BimButton
-          :title="$t('preferences.title')"
-          class="bg-primary flex-col-center h-10 w-10 cursor-pointer rounded-l-lg rounded-r-none border-none"
-        >
-          <SwatchBook class="size-5" />
-        </BimButton>
+        <slot name="trigger">
+          <BimButton
+            :title="$t('preferences.title')"
+            class="bg-primary flex-col-center size-10 cursor-pointer rounded-l-lg rounded-r-none border-none"
+          >
+            <Settings class="size-5" />
+          </BimButton>
+        </slot>
       </template>
       <template #extra>
         <div class="flex items-center">
@@ -274,7 +281,8 @@ async function handleReset() {
             <Block :title="$t('preferences.theme.title')">
               <Theme
                 v-model="themeMode"
-                v-model:theme-semi-dark-menu="themeSemiDarkMenu"
+                v-model:theme-semi-dark-header="themeSemiDarkHeader"
+                v-model:theme-semi-dark-sidebar="themeSemiDarkSidebar"
               />
             </Block>
             <Block :title="$t('preferences.theme.builtin.title')">
@@ -356,6 +364,9 @@ async function handleReset() {
             </Block>
             <Block :title="$t('preferences.widget.title')">
               <Widget
+                v-model:app-preferences-button-position="
+                  appPreferencesButtonPosition
+                "
                 v-model:widget-fullscreen="widgetFullscreen"
                 v-model:widget-global-search="widgetGlobalSearch"
                 v-model:widget-language-toggle="widgetLanguageToggle"

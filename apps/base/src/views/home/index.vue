@@ -1,8 +1,17 @@
+<script setup lang="ts">
+import { computed } from 'vue';
+
+import { microApps } from '#/config/micro-app';
+
+const appConfig = computed(
+  () => microApps.find((ele) => ele.name === 'child-home')!,
+);
+</script>
 <template>
   <micro-app
-    baseroute="home"
+    :baseroute="appConfig.baseroute"
+    :name="appConfig.name"
+    :url="appConfig.url"
     iframe
-    name="my-app"
-    url="http://localhost:9528"
   />
 </template>

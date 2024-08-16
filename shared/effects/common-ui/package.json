@@ -18,9 +18,9 @@
     "@bim/icons": "workspace:*",
     "@bim/locales": "workspace:*",
     "@bim/types": "workspace:*",
-    "@vueuse/integrations": "^10.11.0",
+    "@vueuse/integrations": "^11.0.0",
     "qrcode": "^1.5.4",
-    "vue": "^3.4.36",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {

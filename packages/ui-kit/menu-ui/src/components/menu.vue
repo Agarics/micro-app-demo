@@ -20,8 +20,8 @@ import {
   watchEffect,
 } from 'vue';
 
-import { Ellipsis } from '@bim/icons';
 import { useNamespace } from '@bim-core/composables';
+import { Ellipsis } from '@bim-core/icons';
 import { isHttpUrl } from '@bim-core/shared';
 
 import { useResizeObserver } from '@vueuse/core';
@@ -479,8 +479,8 @@ $namespace: bim;
   }
 
   &.is-horizontal:not(.is-rounded) {
-    --menu-item-height: 60px;
-    --menu-item-radius: 0px;
+    --menu-item-height: 40px;
+    --menu-item-radius: 6px;
   }
 
   &.is-horizontal.is-rounded {
@@ -498,13 +498,13 @@ $namespace: bim;
     --menu-background-color: transparent;
 
     &.is-dark {
-      --menu-item-hover-color: var(--foreground);
+      --menu-item-hover-color: hsl(var(--accent-foreground));
       --menu-item-hover-background-color: hsl(var(--accent));
-      --menu-item-active-color: hsl(var(--foreground));
+      --menu-item-active-color: hsl(var(--accent-foreground));
       --menu-item-active-background-color: hsl(var(--accent));
       --menu-submenu-active-color: hsl(var(--foreground));
       --menu-submenu-active-background-color: hsl(var(--accent));
-      --menu-submenu-hover-color: hsl(var(--foreground));
+      --menu-submenu-hover-color: hsl(var(--accent-foreground));
       --menu-submenu-hover-background-color: hsl(var(--accent));
     }
 
@@ -514,7 +514,7 @@ $namespace: bim;
       --menu-item-hover-background-color: hsl(var(--accent));
       --menu-item-hover-color: hsl(var(--primary));
       --menu-submenu-active-color: hsl(var(--primary));
-      --menu-submenu-active-background-color: hsl(var(--primary) / 30%);
+      --menu-submenu-active-background-color: hsl(var(--primary) / 15%);
       --menu-submenu-hover-color: hsl(var(--primary));
       --menu-submenu-hover-background-color: hsl(var(--accent));
     }
@@ -542,15 +542,6 @@ $namespace: bim;
       }
 
       & > .#{$namespace}-sub-menu {
-        // .#{$namespace}-menu {
-        //   background: var(--menu-submenu-opened-background-color);
-
-        //   .#{$namespace}-sub-menu,
-        //   .#{$namespace}-menu-item:not(.is-active),
-        //   .#{$namespace}-sub-menu-content:not(.is-active) {
-        //     background: var(--menu-submenu-opened-background-color);
-        //   }
-        // }
         & > .#{$namespace}-menu {
           & > .#{$namespace}-menu-item {
             padding-left: calc(
@@ -713,13 +704,11 @@ $namespace: bim;
 
 .#{$namespace}-menu-item {
   fill: var(--menu-item-color);
-  stroke: var(--menu-item-color);
 
   @include menu-item;
 
   &.is-active {
     fill: var(--menu-item-active-color);
-    stroke: var(--menu-item-active-color);
 
     @include menu-item-active;
   }
@@ -783,18 +772,16 @@ $namespace: bim;
   list-style: none;
   background: var(--menu-submenu-background-color);
   fill: var(--menu-item-color);
-  stroke: var(--menu-item-color);
 
   &.is-active {
     div[data-state='open'] > .#{$namespace}-sub-menu-content,
     > .#{$namespace}-sub-menu-content {
-      font-weight: 500;
+      // font-weight: 500;
       color: var(--menu-submenu-active-color);
       text-decoration: none;
       cursor: pointer;
       background: var(--menu-submenu-active-background-color);
       fill: var(--menu-submenu-active-color);
-      stroke: var(--menu-submenu-active-color);
     }
   }
 }

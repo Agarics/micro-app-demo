@@ -16,14 +16,12 @@ export interface InitStoreOptions {
 /**
  * @zh_CN 初始化pinia
  */
-export async function initStores(app: App, options: InitStoreOptions) {
+export async function initStores(app: App, _options: InitStoreOptions) {
   const { createPersistedState } = await import('pinia-plugin-persistedstate');
   pinia = createPinia();
-  const { namespace } = options;
   pinia.use(
     createPersistedState({
       // key $appName-$store.id
-      key: (storeKey) => `${namespace}-${storeKey}`,
       storage: localStorage,
     }),
   );

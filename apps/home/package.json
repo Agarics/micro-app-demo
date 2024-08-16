@@ -14,7 +14,27 @@
     "#/*": "./src/*"
   },
   "dependencies": {
-    "vue": "^3.4.36",
+    "@bim/access": "workspace:^",
+    "@bim/common-ui": "workspace:^",
+    "@bim/constants": "workspace:^",
+    "@bim/hooks": "workspace:^",
+    "@bim/layouts": "workspace:^",
+    "@bim/locales": "workspace:^",
+    "@bim/preferences": "workspace:^",
+    "@bim/request": "workspace:^",
+    "@bim/stores": "workspace:^",
+    "@bim/styles": "workspace:^",
+    "@bim/types": "workspace:^",
+    "@bim/utils": "workspace:^",
+    "@vueuse/core": "^11.0.0",
+    "dayjs": "^1.11.12",
+    "element-plus": "^2.8.0",
+    "pinia": "2.2.2",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.4"
   }
 }

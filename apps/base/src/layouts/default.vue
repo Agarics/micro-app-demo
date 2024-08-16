@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { RouterLink, RouterView } from 'vue-router';
 
-import { Spinner } from '@bim/common-ui';
+import { BimSpinner } from '@bim/common-ui';
 
 import logoUrl from '#/assets/vue.svg';
 
@@ -22,13 +22,10 @@ const { spinning } = useContentSpinner();
           class="border-border bg-background z-1000 fixed top-0 flex w-full flex-[0_0_auto] items-center border-b transition-[margin-top] duration-200"
         >
           <div class="flex h-[60px] items-center justify-between px-[20px]">
-            <RouterLink to="/dashboard"><img :src="logoUrl" /></RouterLink>
+            <RouterLink to="/"><img :src="logoUrl" /></RouterLink>
             <ul class="ml-[20px] flex items-center">
               <li class="mr-[20px]">
                 <RouterLink to="/home">home</RouterLink>
-              </li>
-              <li class="mr-[20px]">
-                <RouterLink to="/ant">ant</RouterLink>
               </li>
             </ul>
           </div>
@@ -38,7 +35,7 @@ const { spinning } = useContentSpinner();
         class="bg-background-deep flex-1 pt-[60px] transition-[margin-top] duration-200"
       >
         <div class="relative h-full">
-          <Spinner :spinning="spinning" class="h-full bg-inherit" />
+          <BimSpinner :spinning="spinning" class="h-full bg-inherit" />
           <RouterView v-slot="{ Component, route }">
             <Transition appear mode="out-in" name="fade-in">
               <component :is="Component" :key="route.name" />

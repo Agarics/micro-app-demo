@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { type Component, computed } from 'vue';
 
-import { Icon, IconDefault } from '@bim/icons';
+import { Icon, IconDefault } from '@bim-core/icons';
 import { isFunction, isHttpUrl, isObject, isString } from '@bim-core/shared';
 
 const props = defineProps<{
