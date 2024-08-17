@@ -6,7 +6,7 @@ import path from 'node:path';
 import { getPackagesSync } from '@bim/node-utils';
 
 import { addDynamicIconSelectors } from '@iconify/tailwind';
-import typographyPlugin from '@tailwindcss/typography';
+// import typographyPlugin from '@tailwindcss/typography';
 import animate from 'tailwindcss-animate';
 
 import { enterAnimationPlugin } from './plugins/entry';
@@ -123,7 +123,7 @@ export default {
   darkMode: 'selector',
   plugins: [
     animate,
-    typographyPlugin,
+    // typographyPlugin,
     addDynamicIconSelectors(),
     enterAnimationPlugin,
   ],

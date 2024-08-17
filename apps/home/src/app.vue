@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import PageLayout from '#/components/page-layout/index.vue';
+import PageLayout from '~/components/page-layout/index.vue';
 
 defineOptions({ name: 'App' });
 </script>

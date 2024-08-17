@@ -4,10 +4,9 @@ import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@bim/constants';
 import { useAccessStore, useUserStore } from '@bim/stores';
 
 import { useTitle } from '@vueuse/core';
-
-import { $t } from '#/locales';
-import { coreRouteNames, dynamicRoutes } from '#/router/routes';
-import { useAuthStore } from '#/store';
+import { $t } from '~/locales';
+import { coreRouteNames, dynamicRoutes } from '~/router/routes';
+import { useAuthStore } from '~/store';
 
 import { generateAccess } from './access';
 

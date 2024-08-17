@@ -8,9 +8,8 @@ import { preferences } from '@bim/preferences';
 import { RequestClient } from '@bim/request';
 import { useAccessStore } from '@bim/stores';
 
+import { useAuthStore } from '~/store';
 import { ElMessage } from 'element-plus';
-
-import { useAuthStore } from '#/store';
 
 const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 

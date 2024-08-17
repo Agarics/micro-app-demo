@@ -1,7 +1,7 @@
 {
   "name": "home",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "pnpm vite build --mode production",
@@ -11,7 +11,7 @@
     "typecheck": "vue-tsc --noEmit --skipLibCheck"
   },
   "imports": {
-    "#/*": "./src/*"
+    "~/*": "./src/*"
   },
   "dependencies": {
     "@bim/access": "workspace:^",

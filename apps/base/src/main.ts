@@ -31,8 +31,8 @@ async function initApplication() {
 }
 
 microApp.start({
-  'disable-memory-router': true, // 关闭虚拟路由系统
-  'disable-patch-request': true, // 关闭对子应用请求的拦截
+  // iframeSrc: `${location.origin}${import.meta.env.VITE_BASE}empty.html`, // iframe沙箱加载了主应用的资源
+  'router-mode': 'native',
 });
 
 initApplication();

@@ -1,11 +1,11 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { $t } from '#/locales';
-import Login from '#/views/authentication/login.vue';
+import { $t } from '~/locales';
+import Login from '~/views/authentication/login.vue';
 
 /** 全局404页面 */
 const fallbackNotFoundRoute: RouteRecordRaw = {
-  component: () => import('#/views/fallback/not-found.vue'),
+  component: () => import('~/views/fallback/not-found.vue'),
   meta: {
     hideInBreadcrumb: true,
     hideInMenu: true,

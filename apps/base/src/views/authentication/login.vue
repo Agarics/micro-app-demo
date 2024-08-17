@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { AuthenticationLogin } from '@bim/common-ui';
 
-import { useAuthStore } from '#/store';
+import { useAuthStore } from '~/store';
 
 defineOptions({ name: 'Login' });
 

@@ -8,11 +8,11 @@ const route = useRoute();
 const layout = computedAsync(async () => {
   try {
     const { layout = 'default' } = route.meta;
-    const layoutComponent = await import(`#/layouts/${layout}.vue`);
+    const layoutComponent = await import(`~/layouts/${layout}.vue`);
     return layoutComponent.default;
   } catch (error) {
-    console.warn(`fail load: #/layouts/${layout}.vue`, error);
-    const defaultComponent = await import(`#/layouts/default.vue`);
+    console.warn(`fail load: ~/layouts/${layout}.vue`, error);
+    const defaultComponent = await import(`~/layouts/default.vue`);
     return defaultComponent.default;
   }
 });

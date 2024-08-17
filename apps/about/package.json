@@ -1,0 +1,24 @@
+{
+  "name": "about",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "~/*": "./src/*"
+  },
+  "dependencies": {
+    "@vueuse/core": "^11.0.0",
+    "dayjs": "^1.11.12",
+    "element-plus": "^2.8.0",
+    "pinia": "2.2.2",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  }
+}

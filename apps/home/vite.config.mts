@@ -20,7 +20,7 @@ export default defineConfig(async () => {
       ],
       resolve: {
         alias: {
-          '#': resolve(import.meta.dirname, 'src'),
+          '~': resolve(import.meta.dirname, 'src'),
         },
       },
       server: {

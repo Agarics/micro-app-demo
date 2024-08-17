@@ -3,7 +3,7 @@ import { createApp } from 'vue';
 import { initStores } from '@bim/stores';
 import '@bim/styles';
 
-import { setupI18n } from '#/locales';
+import { setupI18n } from '~/locales';
 
 import App from './app.vue';
 import { router } from './router';

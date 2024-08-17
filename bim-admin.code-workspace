@@ -1,6 +1,10 @@
 {
   "folders": [
     {
+      "name": "about",
+      "path": "apps/about",
+    },
+    {
       "name": "@bim/backend-mock",
       "path": "apps/backend-mock",
     },

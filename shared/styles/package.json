@@ -7,9 +7,6 @@
       "types": "./src/index.ts",
       "default": "./src/index.ts"
     },
-    "./antd": {
-      "default": "./src/antd/index.css"
-    },
     "./global": {
       "default": "./src/global/index.scss"
     }

@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 import { BimSpinner } from '@bim/common-ui';
 
-import logoUrl from '#/assets/vue.svg';
+import logoUrl from '~/assets/vue.svg';
 
 import { useContentSpinner } from './hooks/use-content-spinner';
 
@@ -21,13 +21,32 @@ const { spinning } = useContentSpinner();
         <header
           class="border-border bg-background z-1000 fixed top-0 flex w-full flex-[0_0_auto] items-center border-b transition-[margin-top] duration-200"
         >
-          <div class="flex h-[60px] items-center justify-between px-[20px]">
-            <RouterLink to="/"><img :src="logoUrl" /></RouterLink>
-            <ul class="ml-[20px] flex items-center">
-              <li class="mr-[20px]">
-                <RouterLink to="/home">home</RouterLink>
-              </li>
-            </ul>
+          <div
+            class="flex h-[60px] w-full flex-1 items-center justify-between px-20"
+          >
+            <div class="flex items-center">
+              <RouterLink to="/"><img :src="logoUrl" /></RouterLink>
+              <ul class="ml-[20px] flex items-center">
+                <li class="mr-[20px]">
+                  <RouterLink to="/home">home</RouterLink>
+                </li>
+                <li class="mr-[20px]">
+                  <RouterLink to="/about">about</RouterLink>
+                </li>
+              </ul>
+            </div>
+            <el-dropdown>
+              <span class="ep-dropdown-link"> Dropdown List </span>
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <el-dropdown-item>Action 1</el-dropdown-item>
+                  <el-dropdown-item>Action 2</el-dropdown-item>
+                  <el-dropdown-item>Action 3</el-dropdown-item>
+                  <el-dropdown-item disabled>Action 4</el-dropdown-item>
+                  <el-dropdown-item divided>Action 5</el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
+            </el-dropdown>
           </div>
         </header>
       </div>

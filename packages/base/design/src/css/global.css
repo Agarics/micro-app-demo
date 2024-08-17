@@ -13,6 +13,10 @@
     border-width: 0;
   }
 
+  :focus-visible {
+    outline: none;
+  }
+
   html {
     @apply text-foreground bg-background font-sans text-[100%];
 

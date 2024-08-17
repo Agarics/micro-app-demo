@@ -1,11 +1,11 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { $t } from '#/locales';
-import Login from '#/views/authentication/login.vue';
+import { $t } from '~/locales';
+import Login from '~/views/authentication/login.vue';
 
 /** 全局404页面 */
 const fallbackNotFoundRoute: RouteRecordRaw = {
-  component: () => import('#/views/fallback/not-found.vue'),
+  component: () => import('~/views/fallback/not-found.vue'),
   meta: {
     hideInBreadcrumb: true,
     hideInMenu: true,
@@ -19,7 +19,7 @@ const fallbackNotFoundRoute: RouteRecordRaw = {
 /** 基本路由，这些路由是必须存在的 */
 const coreRoutes: RouteRecordRaw[] = [
   {
-    component: () => import('#/views/dashboard/index.vue'),
+    component: () => import('~/views/dashboard/index.vue'),
     meta: {
       title: 'Root',
     },

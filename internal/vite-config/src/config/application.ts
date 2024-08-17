@@ -81,7 +81,8 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
       await getCommonConfig(),
       applicationConfig,
     );
-    return mergeConfig(mergedCommonConfig, vite);
+    const finallyConfig = mergeConfig(mergedCommonConfig, vite);
+    return finallyConfig;
   });
 }
 

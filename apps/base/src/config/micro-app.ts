@@ -10,4 +10,9 @@ export const microApps: MicroApp[] = [
     name: 'child-home',
     url: 'http://localhost:9528',
   },
+  {
+    baseroute: 'about',
+    name: 'child-about',
+    url: 'http://localhost:9526',
+  },
 ];

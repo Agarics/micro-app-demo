@@ -6,9 +6,8 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     children: [
       {
-        component: () => import('#/views/demo/index.vue'),
+        component: () => import('~/views/demo/index.vue'),
         meta: {
-          affixTab: true,
           icon: 'lucide:area-chart',
           title: 'demo1',
         },
@@ -16,9 +15,8 @@ const routes: RouteRecordRaw[] = [
         path: '/demo1',
       },
       {
-        component: () => import('#/views/demo/demo2.vue'),
+        component: () => import('~/views/demo/demo2.vue'),
         meta: {
-          affixTab: true,
           icon: 'lucide:area-chart',
           title: 'demo2',
         },

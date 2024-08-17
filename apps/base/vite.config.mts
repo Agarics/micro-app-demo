@@ -10,17 +10,28 @@ export default defineConfig(async () => {
   return {
     application: {},
     vite: {
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: `@use "~/styles/element/index.scss" as *;`,
+          },
+        },
+      },
       plugins: [
         AutoImport({
           resolvers: [ElementPlusResolver()],
         }),
         Components({
-          resolvers: [ElementPlusResolver()],
+          resolvers: [
+            ElementPlusResolver({
+              importStyle: 'sass',
+            }),
+          ],
         }),
       ],
       resolve: {
         alias: {
-          '#': resolve(import.meta.dirname, 'src'),
+          '~': resolve(import.meta.dirname, 'src'),
         },
       },
       server: {

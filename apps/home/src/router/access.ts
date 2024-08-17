@@ -6,12 +6,11 @@ import type {
 import { generateAccessible } from '@bim/access';
 import { preferences } from '@bim/preferences';
 
+import { getAllMenusApi } from '~/api';
+import { $t } from '~/locales';
 import { ElMessage } from 'element-plus';
 
-import { getAllMenusApi } from '#/api';
-import { $t } from '#/locales';
-
-const forbiddenComponent = () => import('#/views/fallback/forbidden.vue');
+const forbiddenComponent = () => import('~/views/fallback/forbidden.vue');
 
 async function generateAccess(options: GenerateMenuAndRoutesOptions) {
   const pageMap: ComponentRecordType = import.meta.glob('../views/**/*.vue');

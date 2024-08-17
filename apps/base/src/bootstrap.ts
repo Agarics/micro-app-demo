@@ -2,9 +2,10 @@ import { createApp } from 'vue';
 
 import { registerAccessDirective } from '@bim/access';
 import { initStores } from '@bim/stores';
+import '@bim/styles/global';
 import '@bim/styles';
 
-import { setupI18n } from '#/locales';
+import { setupI18n } from '~/locales';
 
 import App from './app.vue';
 import { router } from './router';
