@@ -1,4 +1,5 @@
 import type { RouteMeta as IRouteMeta } from '@bim-core/typings';
+import type { MicroApp } from '@micro-zoe/micro-app';
 
 import 'vue-router';
 
@@ -17,6 +18,10 @@ export interface ApplicationConfig {
 
 declare global {
   interface Window {
+    __MICRO_APP_BASE_ROUTE__: string;
+    __MICRO_APP_ENVIRONMENT__: boolean;
     _BIM_ADMIN_PRO_APP_CONF_: BimAdminProAppConfigRaw;
+    microApp: MicroApp;
+    unmount: any;
   }
 }

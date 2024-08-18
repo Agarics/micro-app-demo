@@ -1,10 +1,8 @@
 import { initPreferences } from '@bim/preferences';
 import { unmountGlobalLoading } from '@bim/utils';
 
-import microApp from '@micro-zoe/micro-app';
-
+import { bootstrap } from './bootstrap';
 import { overridesPreferences } from './preferences';
-
 /**
  * 应用初始化完成之后再进行页面加载渲染
  */
@@ -23,16 +21,11 @@ async function initApplication() {
 
   // 启动应用并挂载
   // vue应用主要逻辑及视图
-  const { bootstrap } = await import('./bootstrap');
+
   await bootstrap(namespace);
 
   // 移除并销毁loading
   unmountGlobalLoading();
 }
-
-microApp.start({
-  // iframeSrc: `${location.origin}${import.meta.env.VITE_BASE}empty.html`, // iframe沙箱加载了主应用的资源
-  'router-mode': 'native',
-});
 
 initApplication();

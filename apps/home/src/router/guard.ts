@@ -55,6 +55,19 @@ function setupAccessGuard(router: Router) {
 
       // 没有访问权限，跳转登录页面
       if (to.fullPath !== LOGIN_PATH) {
+        if (window.__MICRO_APP_ENVIRONMENT__) {
+          // 获取主应用路由
+          const baseRouter = window.microApp.router.getBaseAppRouter();
+          // 控制主应用跳转
+          baseRouter.push({
+            path: LOGIN_PATH,
+            // 如不需要，直接删除 query
+            query: { redirect: encodeURIComponent(to.fullPath) },
+            // 携带当前跳转的页面，登录后重新跳转该页面
+            replace: true,
+          });
+          return;
+        }
         return {
           path: LOGIN_PATH,
           // 如不需要，直接删除 query

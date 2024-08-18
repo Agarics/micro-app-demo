@@ -2,10 +2,12 @@ import { createApp } from 'vue';
 
 import { registerAccessDirective } from '@bim/access';
 import { initStores } from '@bim/stores';
-import '@bim/styles/global';
 import '@bim/styles';
+import '@bim/styles/global';
 
+import microApp from '@micro-zoe/micro-app';
 import { setupI18n } from '~/locales';
+import { addMiroAppDataListener } from '~/utils/micro-app-help';
 
 import App from './app.vue';
 import { router } from './router';
@@ -26,6 +28,16 @@ async function bootstrap(_namespace: string) {
   app.use(router);
 
   app.mount('#app');
+
+  microApp.start({
+    // iframeSrc: `${location.origin}${import.meta.env.VITE_BASE}empty.html`, // iframe沙箱加载了主应用的资源
+    'router-mode': 'native',
+  });
+
+  // 注册主应用路由
+  microApp.router.setBaseAppRouter(router);
+
+  addMiroAppDataListener();
 }
 
 export { bootstrap };

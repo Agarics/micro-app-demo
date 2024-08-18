@@ -1,10 +1,7 @@
-interface MicroApp {
-  baseroute: string;
-  name: string;
-  url: string;
-}
+import type { MicroApp } from '@bim/types';
 
-export const microApps: MicroApp[] = [
+// 子应用列表
+const appConfigList: MicroApp[] = [
   {
     baseroute: 'home',
     name: 'child-home',
@@ -16,3 +13,12 @@ export const microApps: MicroApp[] = [
     url: 'http://localhost:9526',
   },
 ];
+
+// 子应用于基座应用部署在同一域名下，url直接使用location.origin
+if (import.meta.env.PROD) {
+  appConfigList.forEach((item) => {
+    item.url = location.origin;
+  });
+}
+
+export const microApps = appConfigList;

@@ -27,6 +27,15 @@ const coreRoutes: RouteRecordRaw[] = [
     path: '/',
   },
   {
+    component: () => import('~/views/home/index.vue'),
+    meta: {
+      icon: 'lucide:area-chart',
+      title: $t('page.dashboard.analytics'),
+    },
+    name: 'Home',
+    path: '/home:path(.*)*',
+  },
+  {
     component: Login,
     meta: {
       layout: 'empty',

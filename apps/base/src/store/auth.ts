@@ -4,7 +4,7 @@ import type { UserInfo } from '@bim/types';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@bim/constants';
+import { LOGIN_PATH } from '@bim/constants';
 import { resetAllStores, useAccessStore, useUserStore } from '@bim/stores';
 
 import { getAccessCodesApi, getUserInfoApi, loginApi } from '~/api';
@@ -54,9 +54,7 @@ export const useAuthStore = defineStore('auth', () => {
         if (accessStore.loginExpired) {
           accessStore.setLoginExpired(false);
         } else {
-          onSuccess
-            ? await onSuccess?.()
-            : await router.push(userInfo.homePath || DEFAULT_HOME_PATH);
+          onSuccess ? await onSuccess?.() : await router.push('/');
         }
 
         if (userInfo?.realName) {
