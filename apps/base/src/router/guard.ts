@@ -66,10 +66,8 @@ function setupAccessGuard(router: Router) {
       return to;
     }
 
-    const accessRoutes = accessStore.accessRoutes;
-
     // 是否已经生成过动态路由
-    if (accessRoutes && accessRoutes.length > 0) {
+    if (accessStore.isAccessChecked) {
       return true;
     }
 
@@ -89,10 +87,11 @@ function setupAccessGuard(router: Router) {
     // 保存菜单信息和路由信息
     accessStore.setAccessMenus(accessibleMenus);
     accessStore.setAccessRoutes(accessibleRoutes);
-    const redirectPath = (from.query.redirect ?? to.path) as string;
+    accessStore.setIsAccessChecked(true);
+    const redirectPath = (from.query.redirect ?? to.fullPath) as string;
 
     return {
-      path: decodeURIComponent(redirectPath),
+      ...router.resolve(decodeURIComponent(redirectPath)),
       replace: true,
     };
   });

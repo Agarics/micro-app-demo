@@ -49,3 +49,6 @@ vite.config.ts.*
 *.njsproj
 *.sln
 *.sw?
+
+**/auto-imports.d.ts
+**/components.d.ts

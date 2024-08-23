@@ -287,21 +287,6 @@ const headerZIndex = computed(() => {
   return zIndex + offset;
 });
 
-const headerWrapperStyle = computed((): CSSProperties => {
-  const fixed = headerFixed.value;
-  return {
-    height: isFullContent.value ? '0' : `${headerWrapperHeight.value}px`,
-    left: isMixedNav.value ? 0 : mainStyle.value.sidebarAndExtraWidth,
-    position: fixed ? 'fixed' : 'static',
-    top:
-      headerIsHidden.value || isFullContent.value
-        ? `-${headerWrapperHeight.value}px`
-        : 0,
-    width: mainStyle.value.width,
-    'z-index': headerZIndex.value,
-  };
-});
-
 /**
  * 侧边栏z-index
  */
@@ -427,7 +412,7 @@ function handleOpenMenu() {
 </script>
 
 <template>
-  <div class="relative flex min-h-full w-full">
+  <div class="relative flex h-full w-full">
     <LayoutSidebar
       v-if="sidebarEnableState"
       v-model:collapse="sidebarCollapse"
@@ -470,11 +455,10 @@ function handleOpenMenu() {
 
     <div
       ref="contentRef"
-      class="flex flex-1 flex-col overflow-hidden transition-all duration-300 ease-in"
+      class="relative flex flex-1 flex-col transition-all duration-300 ease-in"
     >
       <div
-        :style="headerWrapperStyle"
-        class="overflow-hidden transition-all duration-200"
+        class="absolute left-0 right-0 top-0 overflow-hidden transition-all duration-200"
       >
         <LayoutHeader
           v-if="headerVisible"

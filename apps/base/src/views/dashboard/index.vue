@@ -1,5 +1,35 @@
 <template>
-  <div>
+  <div class="bg-[#00ff00]">
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
+    <el-button>测试按钮</el-button>
+    <h1>dashbord</h1>
     <el-button>测试按钮</el-button>
     <h1>dashbord</h1>
   </div>
