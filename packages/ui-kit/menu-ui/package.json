@@ -1,5 +1,5 @@
 {
-  "name": "@bim-core/menu-ui",
+  "name": "@micro-core/menu-ui",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -29,12 +29,12 @@
     }
   },
   "dependencies": {
-    "@bim-core/composables": "workspace:*",
-    "@bim-core/icons": "workspace:*",
-    "@bim-core/shadcn-ui": "workspace:*",
-    "@bim-core/shared": "workspace:*",
-    "@bim-core/typings": "workspace:*",
-    "@vueuse/core": "^11.0.0",
+    "@micro-core/composables": "workspace:*",
+    "@micro-core/icons": "workspace:*",
+    "@micro-core/shadcn-ui": "workspace:*",
+    "@micro-core/shared": "workspace:*",
+    "@micro-core/typings": "workspace:*",
+    "@vueuse/core": "^11.0.1",
     "vue": "^3.4.38"
   }
 }

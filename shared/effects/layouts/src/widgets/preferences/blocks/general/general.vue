@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { SUPPORT_LANGUAGES } from '@bim/constants';
-import { $t } from '@bim/locales';
+import { SUPPORT_LANGUAGES } from '@micro/constants';
+import { $t } from '@micro/locales';
 
 import SelectItem from '../select-item.vue';
 import SwitchItem from '../switch-item.vue';

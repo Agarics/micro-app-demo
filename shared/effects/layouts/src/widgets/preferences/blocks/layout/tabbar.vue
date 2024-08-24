@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { SelectOption } from '@bim/types';
+import type { SelectOption } from '@micro/types';
 
 import { computed } from 'vue';
 
-import { $t } from '@bim/locales';
+import { $t } from '@micro/locales';
 
 import SelectItem from '../select-item.vue';
 import SwitchItem from '../switch-item.vue';

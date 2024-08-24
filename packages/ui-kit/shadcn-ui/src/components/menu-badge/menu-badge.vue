@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { MenuRecordBadgeRaw } from '@bim-core/typings';
+import type { MenuRecordBadgeRaw } from '@micro-core/typings';
 
 import { computed } from 'vue';
 
-import { isValidColor } from '@bim-core/shared';
+import { isValidColor } from '@micro-core/shared';
 
 import BadgeDot from './menu-badge-dot.vue';
 

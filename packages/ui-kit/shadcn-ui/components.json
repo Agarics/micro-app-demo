@@ -10,7 +10,7 @@
   },
   "framework": "vite",
   "aliases": {
-    "components": "@bim-core/shadcn-ui/components",
-    "utils": "@bim-core/shared"
+    "components": "@micro-core/shadcn-ui/components",
+    "utils": "@micro-core/shared"
   }
 }

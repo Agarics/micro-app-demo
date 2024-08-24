@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, reactive, ref, watchEffect } from 'vue';
 
-import { LockKeyhole } from '@bim/icons';
-import { $t, useI18n } from '@bim/locales';
-import { storeToRefs, useLockStore } from '@bim/stores';
-import { BimAvatar, BimButton, BimInputPassword } from '@bim-core/shadcn-ui';
+import { LockKeyhole } from '@micro/icons';
+import { $t, useI18n } from '@micro/locales';
+import { storeToRefs, useLockStore } from '@micro/stores';
+import { BimAvatar, BimButton, BimInputPassword } from '@micro-core/shadcn-ui';
 
 import { useDateFormat, useNow } from '@vueuse/core';
 

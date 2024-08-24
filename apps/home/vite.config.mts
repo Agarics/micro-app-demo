@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 
-import { defineConfig } from '@bim/vite-config';
+import { defineConfig } from '@micro/vite-config';
 
 import AutoImport from 'unplugin-auto-import/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';

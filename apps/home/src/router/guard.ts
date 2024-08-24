@@ -1,7 +1,7 @@
 import type { Router } from 'vue-router';
 
-import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@bim/constants';
-import { useAccessStore, useUserStore } from '@bim/stores';
+import { DEFAULT_HOME_PATH, LOGIN_PATH } from '@micro/constants';
+import { useAccessStore, useUserStore } from '@micro/stores';
 
 import { useTitle } from '@vueuse/core';
 import { $t } from '~/locales';

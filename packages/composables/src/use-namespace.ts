@@ -1,4 +1,4 @@
-import { DEFAULT_NAMESPACE } from '@bim-core/shared';
+import { DEFAULT_NAMESPACE } from '@micro-core/shared';
 
 /**
  * @see copy https://github.com/element-plus/element-plus/blob/dev/packages/hooks/use-namespace/index.ts

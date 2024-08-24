@@ -1,10 +1,10 @@
-import type { DeepPartial } from '@bim-core/typings';
+import type { DeepPartial } from '@micro-core/typings';
 
 import type { InitialOptions, Preferences } from './types';
 
 import { markRaw, reactive, readonly, watch } from 'vue';
 
-import { isMacOs, merge, StorageManager } from '@bim-core/shared';
+import { isMacOs, merge, StorageManager } from '@micro-core/shared';
 
 import {
   breakpointsTailwind,

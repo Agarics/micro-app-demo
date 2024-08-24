@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@bim-core/typings';
+import type { MenuRecordRaw } from '@micro-core/typings';
 
 import { computed } from 'vue';
 
-import { BimMenuBadge } from '@bim-core/shadcn-ui';
+import { BimMenuBadge } from '@micro-core/shadcn-ui';
 
 import { MenuItem, SubMenu as SubMenuComp } from './components';
 // eslint-disable-next-line import/no-self-import

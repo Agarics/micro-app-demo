@@ -1,5 +1,5 @@
 {
-  "name": "@bim/vite-config",
+  "name": "@micro/vite-config",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -30,16 +30,16 @@
     "vite-plugin-vue-devtools": "^7.3.8"
   },
   "devDependencies": {
-    "@bim/node-utils": "workspace:*",
+    "@micro/node-utils": "workspace:*",
     "@types/html-minifier-terser": "^7.0.2",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
-    "dayjs": "^1.11.12",
+    "dayjs": "^1.11.13",
     "dotenv": "^16.4.5",
-    "rollup": "^4.20.0",
+    "rollup": "^4.21.0",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.77.8",
-    "vite": "^5.4.1",
+    "vite": "^5.4.2",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-dts": "4.0.3",
     "vite-plugin-html": "^3.2.2"

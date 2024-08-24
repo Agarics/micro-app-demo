@@ -23,7 +23,7 @@ export async function perfectionist(): Promise<Linter.Config[]> {
                 vue: 'vue',
               },
               value: {
-                bim: ['@bim*', '@bim/**/**', '@bim-core/**/**'],
+                bim: ['@micro*', '@micro/**/**', '@micro-core/**/**'],
                 vue: ['vue', 'vue-*', '@vue*'],
               },
             },

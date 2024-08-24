@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useSlots } from 'vue';
 
-import { CircleHelp } from '@bim/icons';
-import { BimTooltip, Switch } from '@bim-core/shadcn-ui';
+import { CircleHelp } from '@micro/icons';
+import { BimTooltip, Switch } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceSwitchItem',

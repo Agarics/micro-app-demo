@@ -13,8 +13,8 @@ import type {
   RequestClientOptions,
 } from './types';
 
-import { $t } from '@bim/locales';
-import { merge } from '@bim/utils';
+import { $t } from '@micro/locales';
+import { merge } from '@micro/utils';
 
 import axios from 'axios';
 

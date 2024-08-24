@@ -3,6 +3,6 @@
   "display": "Web Application",
   "extends": "./web.json",
   "compilerOptions": {
-    "types": ["vite/client", "@bim/types/global"]
+    "types": ["vite/client", "@micro/types/global"]
   }
 }

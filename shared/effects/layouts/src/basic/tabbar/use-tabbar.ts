@@ -1,11 +1,11 @@
-import type { TabDefinition } from '@bim/types';
-import type { IContextMenuItem } from '@bim-core/tabs-ui';
+import type { TabDefinition } from '@micro/types';
+import type { IContextMenuItem } from '@micro-core/tabs-ui';
 import type { RouteLocationNormalizedGeneric } from 'vue-router';
 
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { useContentMaximize, useTabs } from '@bim/hooks';
+import { useContentMaximize, useTabs } from '@micro/hooks';
 import {
   ArrowLeftToLine,
   ArrowRightLeft,
@@ -18,10 +18,10 @@ import {
   Minimize2,
   RotateCw,
   X,
-} from '@bim/icons';
-import { $t, useI18n } from '@bim/locales';
-import { useAccessStore, useTabbarStore } from '@bim/stores';
-import { filterTree } from '@bim/utils';
+} from '@micro/icons';
+import { $t, useI18n } from '@micro/locales';
+import { useAccessStore, useTabbarStore } from '@micro/stores';
+import { filterTree } from '@micro/utils';
 
 export function useTabbar() {
   const router = useRouter();

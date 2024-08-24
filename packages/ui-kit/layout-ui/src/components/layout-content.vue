@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { ContentCompactType } from '@bim-core/typings';
+import type { ContentCompactType } from '@micro-core/typings';
 
 import type { CSSProperties } from 'vue';
 import { computed } from 'vue';
 
-import { useContentStyle } from '@bim-core/composables';
+import { useContentStyle } from '@micro-core/composables';
 
 interface Props {
   /**

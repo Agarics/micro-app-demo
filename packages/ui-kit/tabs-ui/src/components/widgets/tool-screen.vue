@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Fullscreen, Minimize2 } from '@bim-core/icons';
+import { Fullscreen, Minimize2 } from '@micro-core/icons';
 
 const screen = defineModel<boolean>('screen');
 

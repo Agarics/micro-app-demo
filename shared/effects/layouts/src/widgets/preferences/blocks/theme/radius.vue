@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ToggleGroup, ToggleGroupItem } from '@bim-core/shadcn-ui';
+import { ToggleGroup, ToggleGroupItem } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceColorMode',

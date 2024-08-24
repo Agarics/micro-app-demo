@@ -1,4 +1,4 @@
-import type { DataListenerParam, MessageData, MicroApp } from '@bim/types';
+import type { DataListenerParam, MessageData, MicroApp } from '@micro/types';
 
 import microApp from '@micro-zoe/micro-app';
 import { microApps } from '~/config/micro-app';

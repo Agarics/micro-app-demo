@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss';
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { getPackagesSync } from '@bim/node-utils';
+import { getPackagesSync } from '@micro/node-utils';
 
 import { addDynamicIconSelectors } from '@iconify/tailwind';
 // import typographyPlugin from '@tailwindcss/typography';

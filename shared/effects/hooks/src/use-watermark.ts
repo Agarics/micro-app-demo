@@ -2,7 +2,7 @@ import type { Watermark, WatermarkOptions } from 'watermark-js-plus';
 
 import { nextTick, onUnmounted, ref, watch } from 'vue';
 
-import { preferences } from '@bim/preferences';
+import { preferences } from '@micro/preferences';
 
 const watermark = ref<Watermark>();
 const cachedOptions = ref<Partial<WatermarkOptions>>({

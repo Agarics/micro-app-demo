@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { BreadcrumbStyleType } from '@bim/types';
-import type { IBreadcrumb } from '@bim-core/shadcn-ui';
+import type { BreadcrumbStyleType } from '@micro/types';
+import type { IBreadcrumb } from '@micro-core/shadcn-ui';
 
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
-import { $t } from '@bim/locales';
-import { BimBackgroundBreadcrumb, BimBreadcrumb } from '@bim-core/shadcn-ui';
+import { $t } from '@micro/locales';
+import { BimBackgroundBreadcrumb, BimBreadcrumb } from '@micro-core/shadcn-ui';
 
 interface Props {
   hideWhenOnlyOne?: boolean;

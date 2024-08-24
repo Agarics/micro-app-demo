@@ -1,5 +1,5 @@
 {
-  "name": "@bim/stores",
+  "name": "@micro/stores",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,8 +12,8 @@
     }
   },
   "dependencies": {
-    "@bim-core/shared": "workspace:*",
-    "@bim-core/typings": "workspace:*",
+    "@micro-core/shared": "workspace:*",
+    "@micro-core/typings": "workspace:*",
     "pinia": "2.2.2",
     "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.4.38",

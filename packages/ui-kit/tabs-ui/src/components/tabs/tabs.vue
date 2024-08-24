@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { TabDefinition } from '@bim-core/typings';
+import type { TabDefinition } from '@micro-core/typings';
 
 import type { TabConfig, TabsProps } from '../../types';
 
 import { computed, watch } from 'vue';
 
-import { MdiPin, X } from '@bim-core/icons';
-import { BimContextMenu, BimIcon, BimScrollbar } from '@bim-core/shadcn-ui';
+import { MdiPin, X } from '@micro-core/icons';
+import { BimContextMenu, BimIcon, BimScrollbar } from '@micro-core/shadcn-ui';
 
 interface Props extends TabsProps {}
 

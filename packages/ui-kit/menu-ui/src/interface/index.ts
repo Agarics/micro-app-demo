@@ -1,4 +1,4 @@
-import type { MenuRecordBadgeRaw, ThemeModeType } from '@bim-core/typings';
+import type { MenuRecordBadgeRaw, ThemeModeType } from '@micro-core/typings';
 
 import type { Component, Ref } from 'vue';
 

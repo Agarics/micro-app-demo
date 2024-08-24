@@ -1,5 +1,5 @@
 {
-  "name": "@bim/access",
+  "name": "@micro/access",
   "version": "5.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,10 +12,10 @@
     }
   },
   "dependencies": {
-    "@bim/preferences": "workspace:*",
-    "@bim/stores": "workspace:*",
-    "@bim/types": "workspace:*",
-    "@bim/utils": "workspace:*",
+    "@micro/preferences": "workspace:*",
+    "@micro/stores": "workspace:*",
+    "@micro/types": "workspace:*",
+    "@micro/utils": "workspace:*",
     "vue": "^3.4.38"
   }
 }

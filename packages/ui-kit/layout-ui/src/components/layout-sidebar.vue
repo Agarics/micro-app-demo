@@ -2,7 +2,7 @@
 import type { CSSProperties } from 'vue';
 import { computed, shallowRef, useSlots, watchEffect } from 'vue';
 
-import { BimScrollbar } from '@bim-core/shadcn-ui';
+import { BimScrollbar } from '@micro-core/shadcn-ui';
 
 import { SidebarCollapseButton, SidebarFixedButton } from './widgets';
 

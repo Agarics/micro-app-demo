@@ -3,7 +3,7 @@ import type { VariantProps } from 'class-variance-authority';
 
 import { computed, type HTMLAttributes, inject } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import {
   ToggleGroupItem,

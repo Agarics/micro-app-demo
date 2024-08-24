@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { BuiltinThemeType } from '@bim/types';
+import type { BuiltinThemeType } from '@micro/types';
 
-import { Palette } from '@bim/icons';
+import { Palette } from '@micro/icons';
 import {
   COLOR_PRESETS,
   preferences,
   updatePreferences,
-} from '@bim/preferences';
-import { BimIconButton } from '@bim-core/shadcn-ui';
+} from '@micro/preferences';
+import { BimIconButton } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationColorToggle',

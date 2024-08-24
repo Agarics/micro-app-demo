@@ -42,7 +42,7 @@ const customConfig: Linter.Config[] = [
     },
   },
   {
-    // @core内部组件，不能引入@bim/* 里面的包
+    // @core内部组件，不能引入@micro/* 里面的包
     files: ['packages/@core/**/**'],
     ignores: restrictedImportIgnores,
     rules: {
@@ -51,9 +51,9 @@ const customConfig: Linter.Config[] = [
         {
           patterns: [
             {
-              group: ['@bim/*'],
+              group: ['@micro/*'],
               message:
-                'The @core package cannot import the @bim package, please use the @core package itself',
+                'The @core package cannot import the @micro package, please use the @core package itself',
             },
           ],
         },
@@ -61,7 +61,7 @@ const customConfig: Linter.Config[] = [
     },
   },
   {
-    // @core/shared内部组件，不能引入@bim/* 或者 @bim-core/* 里面的包
+    // @core/shared内部组件，不能引入@micro/* 或者 @micro-core/* 里面的包
     files: ['packages/@core/base/**/**'],
     ignores: restrictedImportIgnores,
     rules: {
@@ -70,9 +70,9 @@ const customConfig: Linter.Config[] = [
         {
           patterns: [
             {
-              group: ['@bim/*', '@bim-core/*'],
+              group: ['@micro/*', '@micro-core/*'],
               message:
-                'The @bim-core/shared package cannot import the @bim package, please use the @core/shared package itself',
+                'The @micro-core/shared package cannot import the @micro package, please use the @core/shared package itself',
             },
           ],
         },
@@ -80,7 +80,7 @@ const customConfig: Linter.Config[] = [
     },
   },
   {
-    // 不能引入@bim/*里面的包
+    // 不能引入@micro/*里面的包
     files: [
       'packages/types/**/**',
       'packages/utils/**/**',
@@ -98,9 +98,9 @@ const customConfig: Linter.Config[] = [
         {
           patterns: [
             {
-              group: ['@bim/*'],
+              group: ['@micro/*'],
               message:
-                'The @bim package cannot be imported, please use the @core package itself',
+                'The @micro package cannot be imported, please use the @core package itself',
             },
           ],
         },

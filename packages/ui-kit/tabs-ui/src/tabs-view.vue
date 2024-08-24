@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { Sortable } from '@bim-core/composables';
-import type { TabDefinition } from '@bim-core/typings';
+import type { Sortable } from '@micro-core/composables';
+import type { TabDefinition } from '@micro-core/typings';
 
 import type { TabsProps } from './types';
 
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
-import { useForwardPropsEmits, useSortable } from '@bim-core/composables';
-import { ChevronLeft, ChevronRight } from '@bim-core/icons';
+import { useForwardPropsEmits, useSortable } from '@micro-core/composables';
+import { ChevronLeft, ChevronRight } from '@micro-core/icons';
 
 import { Tabs, TabsChrome } from './components';
 import { useTabsViewScroll } from './use-tabs-view-scroll';

@@ -1,2 +1,2 @@
 export * from './core';
-export * from '@bim-core/shared/constants';
+export * from '@micro-core/shared/constants';

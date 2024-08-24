@@ -1,5 +1,5 @@
 {
-  "name": "@bim/tsconfig",
+  "name": "@micro/tsconfig",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
     "web.json"
   ],
   "dependencies": {
-    "@bim/types": "workspace:*",
-    "vite": "^5.4.1"
+    "@micro/types": "workspace:*",
+    "vite": "^5.4.2"
   }
 }

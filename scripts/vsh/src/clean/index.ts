@@ -2,7 +2,7 @@ import type { CAC } from 'cac';
 
 import { join } from 'node:path';
 
-import { colors, getPackages, rimraf, spinner } from '@bim/node-utils';
+import { colors, getPackages, rimraf, spinner } from '@micro/node-utils';
 
 const CLEAN_DIRS = ['dist', 'node_modules', '.turbo'];
 

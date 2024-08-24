@@ -1,5 +1,5 @@
 {
-  "name": "@bim/hooks",
+  "name": "@micro/hooks",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,11 +12,11 @@
     }
   },
   "dependencies": {
-    "@bim-core/composables": "workspace:*",
-    "@bim/preferences": "workspace:*",
-    "@bim/stores": "workspace:*",
-    "@bim/types": "workspace:*",
-    "@bim/utils": "workspace:*",
+    "@micro-core/composables": "workspace:*",
+    "@micro/preferences": "workspace:*",
+    "@micro/stores": "workspace:*",
+    "@micro/types": "workspace:*",
+    "@micro/utils": "workspace:*",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3",
     "watermark-js-plus": "^1.5.3"

@@ -1,5 +1,5 @@
 {
-  "name": "@bim/layouts",
+  "name": "@micro/layouts",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,19 +12,19 @@
     }
   },
   "dependencies": {
-    "@bim-core/layout-ui": "workspace:*",
-    "@bim-core/menu-ui": "workspace:*",
-    "@bim-core/shadcn-ui": "workspace:*",
-    "@bim-core/tabs-ui": "workspace:*",
-    "@bim/constants": "workspace:*",
-    "@bim/hooks": "workspace:*",
-    "@bim/icons": "workspace:*",
-    "@bim/locales": "workspace:*",
-    "@bim/preferences": "workspace:*",
-    "@bim/stores": "workspace:*",
-    "@bim/types": "workspace:*",
-    "@bim/utils": "workspace:*",
-    "@vueuse/core": "^11.0.0",
+    "@micro-core/layout-ui": "workspace:*",
+    "@micro-core/menu-ui": "workspace:*",
+    "@micro-core/shadcn-ui": "workspace:*",
+    "@micro-core/tabs-ui": "workspace:*",
+    "@micro/constants": "workspace:*",
+    "@micro/hooks": "workspace:*",
+    "@micro/icons": "workspace:*",
+    "@micro/locales": "workspace:*",
+    "@micro/preferences": "workspace:*",
+    "@micro/stores": "workspace:*",
+    "@micro/types": "workspace:*",
+    "@micro/utils": "workspace:*",
+    "@vueuse/core": "^11.0.1",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   }

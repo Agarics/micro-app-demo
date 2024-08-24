@@ -2,10 +2,10 @@ import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
   RouteRecordStringComponent,
-} from '@bim-core/typings';
+} from '@micro-core/typings';
 import type { RouteRecordRaw } from 'vue-router';
 
-import { mapTree } from '@bim-core/shared';
+import { mapTree } from '@micro-core/shared';
 
 /**
  * 动态生成路由 - 后端方式

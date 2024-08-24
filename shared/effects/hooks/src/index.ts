@@ -4,4 +4,4 @@ export * from './use-design-tokens';
 export * from './use-refresh';
 export * from './use-tabs';
 export * from './use-watermark';
-export * from '@bim-core/composables';
+export * from '@micro-core/composables';

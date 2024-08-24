@@ -10,7 +10,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 interface Props {
   avatar?: string;

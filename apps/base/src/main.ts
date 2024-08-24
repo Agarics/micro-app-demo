@@ -1,5 +1,5 @@
-import { initPreferences } from '@bim/preferences';
-import { unmountGlobalLoading } from '@bim/utils';
+import { initPreferences } from '@micro/preferences';
+import { unmountGlobalLoading } from '@micro/utils';
 
 import { bootstrap } from './bootstrap';
 import { overridesPreferences } from './preferences';

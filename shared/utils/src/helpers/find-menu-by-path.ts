@@ -1,4 +1,4 @@
-import type { MenuRecordRaw } from '@bim-core/typings';
+import type { MenuRecordRaw } from '@micro-core/typings';
 
 function findMenuByPath(
   list: MenuRecordRaw[],

@@ -3,7 +3,7 @@ import type { CheckboxRootEmits, CheckboxRootProps } from 'radix-vue';
 
 import { computed, type HTMLAttributes } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { CheckIcon } from '@radix-icons/vue';
 import {

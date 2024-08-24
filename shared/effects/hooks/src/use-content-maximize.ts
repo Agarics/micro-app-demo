@@ -1,4 +1,4 @@
-import { updatePreferences, usePreferences } from '@bim/preferences';
+import { updatePreferences, usePreferences } from '@micro/preferences';
 /**
  * 主体区域最大化
  */

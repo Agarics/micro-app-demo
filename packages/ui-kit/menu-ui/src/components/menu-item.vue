@@ -3,8 +3,8 @@ import type { MenuItemProps, MenuItemRegistered } from '../interface';
 
 import { computed, onBeforeUnmount, onMounted, reactive, useSlots } from 'vue';
 
-import { useNamespace } from '@bim-core/composables';
-import { BimIcon, BimMenuBadge, BimTooltip } from '@bim-core/shadcn-ui';
+import { useNamespace } from '@micro-core/composables';
+import { BimIcon, BimMenuBadge, BimTooltip } from '@micro-core/shadcn-ui';
 
 import { useMenu, useMenuContext, useSubMenuContext } from '../hooks';
 

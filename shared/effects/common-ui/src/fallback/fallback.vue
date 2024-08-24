@@ -4,9 +4,9 @@ import type { FallbackProps } from './fallback';
 import { computed, defineAsyncComponent } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { ArrowLeft, RotateCw } from '@bim/icons';
-import { $t } from '@bim/locales';
-import { BimButton } from '@bim-core/shadcn-ui';
+import { ArrowLeft, RotateCw } from '@micro/icons';
+import { $t } from '@micro/locales';
+import { BimButton } from '@micro-core/shadcn-ui';
 
 interface Props extends FallbackProps {}
 

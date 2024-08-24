@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { LayoutType } from '@bim/types';
+import type { LayoutType } from '@micro/types';
 
 import { type Component, computed } from 'vue';
 
-import { CircleHelp } from '@bim/icons';
-import { $t } from '@bim/locales';
-import { BimTooltip } from '@bim-core/shadcn-ui';
+import { CircleHelp } from '@micro/icons';
+import { $t } from '@micro/locales';
+import { BimTooltip } from '@micro-core/shadcn-ui';
 
 import {
   FullContent,

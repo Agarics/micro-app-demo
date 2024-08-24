@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from '@bim-core/shadcn-ui';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@micro-core/shadcn-ui';
 
 interface Props {
   title: string;

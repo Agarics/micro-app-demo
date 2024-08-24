@@ -1,5 +1,5 @@
 {
-  "name": "@bim/chart-ui",
+  "name": "@micro/chart-ui",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,8 +12,8 @@
     }
   },
   "dependencies": {
-    "@bim/preferences": "workspace:*",
-    "@vueuse/core": "^11.0.0",
+    "@micro/preferences": "workspace:*",
+    "@vueuse/core": "^11.0.1",
     "echarts": "^5.5.1",
     "vue": "^3.4.38"
   }

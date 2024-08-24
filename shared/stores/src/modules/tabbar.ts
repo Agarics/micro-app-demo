@@ -1,9 +1,9 @@
-import type { TabDefinition } from '@bim-core/typings';
+import type { TabDefinition } from '@micro-core/typings';
 import type { Router, RouteRecordNormalized } from 'vue-router';
 
 import { toRaw } from 'vue';
 
-import { openWindow, startProgress, stopProgress } from '@bim-core/shared';
+import { openWindow, startProgress, stopProgress } from '@micro-core/shared';
 
 import { acceptHMRUpdate, defineStore } from 'pinia';
 

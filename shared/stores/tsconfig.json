@@ -1,5 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@bim/tsconfig/web.json",
+  "extends": "@micro/tsconfig/web.json",
   "include": ["src", "shim-pinia.d.ts"]
 }

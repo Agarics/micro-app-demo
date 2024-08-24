@@ -3,7 +3,7 @@ import type {
   LayoutHeaderModeType,
   LayoutType,
   ThemeModeType,
-} from '@bim-core/typings';
+} from '@micro-core/typings';
 
 interface BimLayoutProps {
   /**

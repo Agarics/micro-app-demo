@@ -1,1 +1,1 @@
-export { default } from '@bim/tailwind-config/postcss';
+export { default } from '@micro/tailwind-config/postcss';

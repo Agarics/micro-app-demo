@@ -1,4 +1,4 @@
-import { defineOverridesPreferences } from '@bim/preferences';
+import { defineOverridesPreferences } from '@micro/preferences';
 
 /**
  * @description 项目配置文件

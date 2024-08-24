@@ -1,9 +1,9 @@
 import { createApp } from 'vue';
 
-import { registerAccessDirective } from '@bim/access';
-import { initStores } from '@bim/stores';
-import '@bim/styles';
-import '@bim/styles/global';
+import { registerAccessDirective } from '@micro/access';
+import { initStores } from '@micro/stores';
+import '@micro/styles';
+import '@micro/styles/global';
 
 import microApp from '@micro-zoe/micro-app';
 import { setupI18n } from '~/locales';

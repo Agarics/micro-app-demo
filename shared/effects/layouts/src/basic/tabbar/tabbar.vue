@@ -2,15 +2,15 @@
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { useContentMaximize, useTabs } from '@bim/hooks';
-import { preferences } from '@bim/preferences';
-import { useTabbarStore } from '@bim/stores';
+import { useContentMaximize, useTabs } from '@micro/hooks';
+import { preferences } from '@micro/preferences';
+import { useTabbarStore } from '@micro/stores';
 import {
   TabsToolMore,
   TabsToolRefresh,
   TabsToolScreen,
   TabsView,
-} from '@bim-core/tabs-ui';
+} from '@micro-core/tabs-ui';
 
 import { useTabbar } from './use-tabbar';
 

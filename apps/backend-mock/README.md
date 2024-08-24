@@ -1,4 +1,4 @@
-# @bim/backend-mock
+# @micro/backend-mock
 
 ## Description
 

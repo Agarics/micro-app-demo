@@ -1,5 +1,5 @@
 {
-  "name": "@bim/styles",
+  "name": "@micro/styles",
   "version": "1.0.0",
   "type": "module",
   "exports": {
@@ -12,6 +12,6 @@
     }
   },
   "dependencies": {
-    "@bim-core/design": "workspace:*"
+    "@micro-core/design": "workspace:*"
   }
 }

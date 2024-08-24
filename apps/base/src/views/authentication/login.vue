@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { AuthenticationLogin } from '@bim/common-ui';
+import { AuthenticationLogin } from '@micro/common-ui';
 
 import { useAuthStore } from '~/store';
 

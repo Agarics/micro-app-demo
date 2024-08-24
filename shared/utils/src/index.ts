@@ -1,3 +1,3 @@
 export * from './helpers';
-export * from '@bim-core/shared/color';
-export * from '@bim-core/shared/utils';
+export * from '@micro-core/shared/color';
+export * from '@micro-core/shared/utils';

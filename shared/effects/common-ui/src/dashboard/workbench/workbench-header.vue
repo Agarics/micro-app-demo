@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { BimAvatar } from '@bim-core/shadcn-ui';
+import { BimAvatar } from '@micro-core/shadcn-ui';
 
 interface Props {
   avatar?: string;

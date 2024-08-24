@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { RotateCw } from '@bim-core/icons';
+import { RotateCw } from '@micro-core/icons';
 
 const emit = defineEmits<{ refresh: [] }>();
 

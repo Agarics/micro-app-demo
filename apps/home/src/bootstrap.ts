@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 
-import { initStores } from '@bim/stores';
-import '@bim/styles';
+import { initStores } from '@micro/stores';
+import '@micro/styles';
 
 import { setupI18n } from '~/locales';
 

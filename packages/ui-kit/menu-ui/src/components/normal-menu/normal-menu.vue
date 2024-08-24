@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@bim-core/typings';
+import type { MenuRecordRaw } from '@micro-core/typings';
 
 import type { NormalMenuProps } from './normal-menu';
 
-import { useNamespace } from '@bim-core/composables';
-import { BimIcon } from '@bim-core/shadcn-ui';
+import { useNamespace } from '@micro-core/composables';
+import { BimIcon } from '@micro-core/shadcn-ui';
 
 interface Props extends NormalMenuProps {}
 

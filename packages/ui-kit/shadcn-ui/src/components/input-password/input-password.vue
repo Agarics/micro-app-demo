@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, useSlots } from 'vue';
 
-import { Eye, EyeOff } from '@bim-core/icons';
+import { Eye, EyeOff } from '@micro-core/icons';
 
 import { useForwardProps } from 'radix-vue';
 

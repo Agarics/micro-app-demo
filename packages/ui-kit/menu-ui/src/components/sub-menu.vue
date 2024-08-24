@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { HoverCardContentProps } from '@bim-core/shadcn-ui';
+import type { HoverCardContentProps } from '@micro-core/shadcn-ui';
 
 import type {
   MenuItemRegistered,
@@ -9,8 +9,8 @@ import type {
 
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue';
 
-import { useNamespace } from '@bim-core/composables';
-import { BimHoverCard } from '@bim-core/shadcn-ui';
+import { useNamespace } from '@micro-core/composables';
+import { BimHoverCard } from '@micro-core/shadcn-ui';
 
 import {
   createSubMenuContext,

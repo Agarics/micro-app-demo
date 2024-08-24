@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { ScrollArea, ScrollBar } from '../ui/scroll-area';
 

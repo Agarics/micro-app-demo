@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import type { NotificationItem } from './types';
 
-import { Bell, MailCheck } from '@bim/icons';
-import { $t } from '@bim/locales';
+import { Bell, MailCheck } from '@micro/icons';
+import { $t } from '@micro/locales';
 import {
   BimButton,
   BimIconButton,
   BimPopover,
   BimScrollbar,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import { useToggle } from '@vueuse/core';
 

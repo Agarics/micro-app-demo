@@ -1,6 +1,6 @@
 import { computed } from 'vue';
 
-import { diff } from '@bim-core/shared';
+import { diff } from '@micro-core/shared';
 
 import { preferencesManager } from './preferences';
 import { isDarkTheme } from './update-css-variables';

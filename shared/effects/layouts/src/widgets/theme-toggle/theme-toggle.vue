@@ -1,14 +1,18 @@
 <script lang="ts" setup>
-import type { ThemeModeType } from '@bim/types';
+import type { ThemeModeType } from '@micro/types';
 
-import { MoonStar, Sun, SunMoon } from '@bim/icons';
-import { $t } from '@bim/locales';
+import { MoonStar, Sun, SunMoon } from '@micro/icons';
+import { $t } from '@micro/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@bim/preferences';
-import { BimTooltip, ToggleGroup, ToggleGroupItem } from '@bim-core/shadcn-ui';
+} from '@micro/preferences';
+import {
+  BimTooltip,
+  ToggleGroup,
+  ToggleGroupItem,
+} from '@micro-core/shadcn-ui';
 
 import ThemeButton from './theme-button.vue';
 

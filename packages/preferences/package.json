@@ -1,5 +1,5 @@
 {
-  "name": "@bim-core/preferences",
+  "name": "@micro-core/preferences",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -21,9 +21,9 @@
     }
   },
   "dependencies": {
-    "@bim-core/shared": "workspace:*",
-    "@bim-core/typings": "workspace:*",
-    "@vueuse/core": "^11.0.0",
+    "@micro-core/shared": "workspace:*",
+    "@micro-core/typings": "workspace:*",
+    "@vueuse/core": "^11.0.1",
     "vue": "^3.4.38"
   }
 }

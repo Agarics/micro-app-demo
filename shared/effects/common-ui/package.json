@@ -1,5 +1,5 @@
 {
-  "name": "@bim/common-ui",
+  "name": "@micro/common-ui",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,13 +12,13 @@
     }
   },
   "dependencies": {
-    "@bim-core/shadcn-ui": "workspace:*",
-    "@bim/constants": "workspace:*",
-    "@bim/hooks": "workspace:*",
-    "@bim/icons": "workspace:*",
-    "@bim/locales": "workspace:*",
-    "@bim/types": "workspace:*",
-    "@vueuse/integrations": "^11.0.0",
+    "@micro-core/shadcn-ui": "workspace:*",
+    "@micro/constants": "workspace:*",
+    "@micro/hooks": "workspace:*",
+    "@micro/icons": "workspace:*",
+    "@micro/locales": "workspace:*",
+    "@micro/types": "workspace:*",
+    "@vueuse/integrations": "^11.0.1",
     "qrcode": "^1.5.4",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"

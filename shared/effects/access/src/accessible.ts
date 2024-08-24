@@ -2,7 +2,7 @@ import type {
   AccessModeType,
   GenerateMenuAndRoutesOptions,
   RouteRecordRaw,
-} from '@bim/types';
+} from '@micro/types';
 
 import {
   cloneDeep,
@@ -10,7 +10,7 @@ import {
   generateRoutesByBackend,
   generateRoutesByFrontend,
   mapTree,
-} from '@bim/utils';
+} from '@micro/utils';
 
 async function generateAccessible(
   mode: AccessModeType,

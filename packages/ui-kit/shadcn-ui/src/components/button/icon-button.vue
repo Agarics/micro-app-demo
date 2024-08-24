@@ -3,7 +3,7 @@ import type { ButtonVariants } from '../ui/button';
 
 import { computed, useSlots } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { type PrimitiveProps } from 'radix-vue';
 

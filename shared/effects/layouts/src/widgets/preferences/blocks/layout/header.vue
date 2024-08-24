@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { LayoutHeaderModeType, SelectOption } from '@bim/types';
+import type { LayoutHeaderModeType, SelectOption } from '@micro/types';
 
-import { $t } from '@bim/locales';
+import { $t } from '@micro/locales';
 
 import SelectItem from '../select-item.vue';
 import SwitchItem from '../switch-item.vue';

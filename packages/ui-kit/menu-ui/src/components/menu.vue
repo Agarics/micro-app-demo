@@ -20,9 +20,9 @@ import {
   watchEffect,
 } from 'vue';
 
-import { useNamespace } from '@bim-core/composables';
-import { Ellipsis } from '@bim-core/icons';
-import { isHttpUrl } from '@bim-core/shared';
+import { useNamespace } from '@micro-core/composables';
+import { Ellipsis } from '@micro-core/icons';
+import { isHttpUrl } from '@micro-core/shared';
 
 import { useResizeObserver } from '@vueuse/core';
 

@@ -3,7 +3,7 @@ import type { BacktopProps } from './backtop';
 
 import { computed } from 'vue';
 
-import { ArrowUpToLine } from '@bim-core/icons';
+import { ArrowUpToLine } from '@micro-core/icons';
 
 import { BimButton } from '../button';
 import { useBackTop } from './use-backtop';

@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { MenuRecordRaw } from '@bim/types';
-import type { NormalMenuProps } from '@bim-core/menu-ui';
+import type { MenuRecordRaw } from '@micro/types';
+import type { NormalMenuProps } from '@micro-core/menu-ui';
 
 import { onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { findMenuByPath } from '@bim/utils';
-import { NormalMenu } from '@bim-core/menu-ui';
+import { findMenuByPath } from '@micro/utils';
+import { NormalMenu } from '@micro-core/menu-ui';
 
 interface Props extends NormalMenuProps {}
 

@@ -7,7 +7,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 interface Props {
   items: WorkbenchProjectItem[];

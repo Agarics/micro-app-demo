@@ -1,7 +1,7 @@
 import { computed } from 'vue';
 
-import { preferences, updatePreferences } from '@bim/preferences';
-import { useAccessStore, useUserStore } from '@bim/stores';
+import { preferences, updatePreferences } from '@micro/preferences';
+import { useAccessStore, useUserStore } from '@micro/stores';
 
 function useAccess() {
   const accessStore = useAccessStore();

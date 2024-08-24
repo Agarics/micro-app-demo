@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, type HTMLAttributes } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { Cross2Icon } from '@radix-icons/vue';
 import { ToastClose, type ToastCloseProps } from 'radix-vue';

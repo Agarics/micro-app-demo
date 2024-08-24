@@ -1,4 +1,4 @@
-import type { LayoutType } from '@bim-core/typings';
+import type { LayoutType } from '@micro-core/typings';
 
 import type { BimLayoutProps } from '../bim-layout';
 

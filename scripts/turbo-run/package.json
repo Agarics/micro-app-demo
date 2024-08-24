@@ -1,5 +1,5 @@
 {
-  "name": "@bim/turbo-run",
+  "name": "@micro/turbo-run",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -21,7 +21,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@bim/node-utils": "workspace:*",
+    "@micro/node-utils": "workspace:*",
     "@clack/prompts": "^0.7.0",
     "cac": "^6.7.14"
   }

@@ -13,7 +13,7 @@ import type {
   PreferencesButtonPositionType,
   TabsStyleType,
   ThemeModeType,
-} from '@bim-core/typings';
+} from '@micro-core/typings';
 
 type SupportedLanguagesType = 'en-US' | 'zh-CN';
 

@@ -1,4 +1,4 @@
-import { createIconifyIcon } from '@bim-core/icons';
+import { createIconifyIcon } from '@micro-core/icons';
 
 import './load';
 

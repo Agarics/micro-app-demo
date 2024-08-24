@@ -1,5 +1,5 @@
 // @ts-check
 
-import { defineConfig } from '@bim/eslint-config';
+import { defineConfig } from '@micro/eslint-config';
 
 export default defineConfig();

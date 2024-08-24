@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { MdiGithub, MdiGoogle, MdiQqchat, MdiWechat } from '@bim/icons';
-import { $t } from '@bim/locales';
-import { BimIconButton } from '@bim-core/shadcn-ui';
+import { MdiGithub, MdiGoogle, MdiQqchat, MdiWechat } from '@micro/icons';
+import { $t } from '@micro/locales';
+import { BimIconButton } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'ThirdPartyLogin',

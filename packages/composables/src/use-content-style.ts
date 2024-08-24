@@ -6,7 +6,7 @@ import {
   CSS_VARIABLE_LAYOUT_CONTENT_WIDTH,
   getElementVisibleRect,
   type VisibleDomRect,
-} from '@bim-core/shared';
+} from '@micro-core/shared';
 
 import { useCssVar, useDebounceFn } from '@vueuse/core';
 

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import { LoaderCircle } from '@bim-core/icons';
-import { cn } from '@bim-core/shared';
+import { LoaderCircle } from '@micro-core/icons';
+import { cn } from '@micro-core/shared';
 
 import { Primitive, type PrimitiveProps } from 'radix-vue';
 

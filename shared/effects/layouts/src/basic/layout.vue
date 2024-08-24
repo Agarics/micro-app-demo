@@ -1,19 +1,19 @@
 <script lang="ts" setup>
-import type { MenuRecordRaw } from '@bim/types';
+import type { MenuRecordRaw } from '@micro/types';
 
 import { computed, useSlots, watch } from 'vue';
 
-import { useWatermark } from '@bim/hooks';
-import { $t } from '@bim/locales';
+import { useWatermark } from '@micro/hooks';
+import { $t } from '@micro/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@bim/preferences';
-import { useLockStore, useUserStore } from '@bim/stores';
-import { mapTree } from '@bim/utils';
-import { BimAdminLayout } from '@bim-core/layout-ui';
-import { BimBackTop, BimLogo, Toaster } from '@bim-core/shadcn-ui';
+} from '@micro/preferences';
+import { useLockStore, useUserStore } from '@micro/stores';
+import { mapTree } from '@micro/utils';
+import { BimAdminLayout } from '@micro-core/layout-ui';
+import { BimBackTop, BimLogo, Toaster } from '@micro-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';

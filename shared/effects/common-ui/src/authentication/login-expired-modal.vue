@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AuthenticationProps, LoginAndRegisterParams } from './typings';
 
-import { useForwardPropsEmits } from '@bim/hooks';
+import { useForwardPropsEmits } from '@micro/hooks';
 import {
   BimAvatar,
   Dialog,
@@ -9,7 +9,7 @@ import {
   DialogDescription,
   DialogTitle,
   VisuallyHidden,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import AuthenticationLogin from './login.vue';
 

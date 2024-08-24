@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { RouterLink, RouterView } from 'vue-router';
 
-import { BimSpinner } from '@bim/common-ui';
+import { BimSpinner } from '@micro/common-ui';
 
 import logoUrl from '~/assets/vue.svg';
 

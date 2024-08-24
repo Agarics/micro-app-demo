@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { computed, useSlots } from 'vue';
 
-import { preferences, usePreferences } from '@bim/preferences';
-import { useAccessStore } from '@bim/stores';
-import { BimFullScreen } from '@bim-core/shadcn-ui';
+import { preferences, usePreferences } from '@micro/preferences';
+import { useAccessStore } from '@micro/stores';
+import { BimFullScreen } from '@micro-core/shadcn-ui';
 
 import {
   GlobalSearch,

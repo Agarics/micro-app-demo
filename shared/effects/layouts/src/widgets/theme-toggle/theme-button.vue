@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, nextTick } from 'vue';
 
-import { BimButton } from '@bim-core/shadcn-ui';
+import { BimButton } from '@micro-core/shadcn-ui';
 
 interface Props {
   /**

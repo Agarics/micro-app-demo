@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 
-import { defineConfig } from '@bim/vite-config';
+import { defineConfig } from '@micro/vite-config';
 
 export default defineConfig(async () => {
   return {

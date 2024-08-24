@@ -4,13 +4,13 @@ import type { RegisterEmits } from './typings';
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@bim/locales';
+import { $t } from '@micro/locales';
 import {
   BimButton,
   BimCheckbox,
   BimInput,
   BimInputPassword,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 

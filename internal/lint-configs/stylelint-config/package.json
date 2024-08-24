@@ -1,5 +1,5 @@
 {
-  "name": "@bim/stylelint-config",
+  "name": "@micro/stylelint-config",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -15,8 +15,8 @@
     }
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^3.0.0",
-    "stylelint-config-recess-order": "^5.0.1",
+    "@stylistic/stylelint-plugin": "^3.0.1",
+    "stylelint-config-recess-order": "^5.1.0",
     "stylelint-scss": "^6.5.0"
   },
   "devDependencies": {

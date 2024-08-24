@@ -3,7 +3,7 @@ import type { AboutProps, DescriptionItem } from './about';
 
 import { h } from 'vue';
 
-import { BimLink, BimRenderContent } from '@bim-core/shadcn-ui';
+import { BimLink, BimRenderContent } from '@micro-core/shadcn-ui';
 
 interface Props extends AboutProps {}
 

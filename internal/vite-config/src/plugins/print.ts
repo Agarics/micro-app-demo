@@ -2,7 +2,7 @@ import type { PluginOption } from 'vite';
 
 import type { PrintPluginOptions } from '../typing';
 
-import { colors } from '@bim/node-utils';
+import { colors } from '@micro/node-utils';
 
 export const vitePrintPlugin = (
   options: PrintPluginOptions = {},

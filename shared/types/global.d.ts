@@ -1,4 +1,4 @@
-import type { RouteMeta as IRouteMeta } from '@bim-core/typings';
+import type { RouteMeta as IRouteMeta } from '@micro-core/typings';
 import type { MicroApp } from '@micro-zoe/micro-app';
 
 import 'vue-router';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { Primitive, type PrimitiveProps } from 'radix-vue';
 

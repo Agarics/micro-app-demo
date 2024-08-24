@@ -2,8 +2,8 @@
 import type { CSSProperties } from 'vue';
 import { computed, useSlots } from 'vue';
 
-import { Menu } from '@bim-core/icons';
-import { BimIconButton } from '@bim-core/shadcn-ui';
+import { Menu } from '@micro-core/icons';
+import { BimIconButton } from '@micro-core/shadcn-ui';
 
 interface Props {
   /**

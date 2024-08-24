@@ -2,7 +2,7 @@ import type { ConfigEnv, UserConfig } from 'vite';
 
 import type { DefineLibraryOptions } from '../typing';
 
-import { readPackageJSON } from '@bim/node-utils';
+import { readPackageJSON } from '@micro/node-utils';
 
 import { defineConfig, mergeConfig } from 'vite';
 

@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router';
 
-import { filterTree, mapTree } from '@bim-core/shared';
+import { filterTree, mapTree } from '@micro-core/shared';
 
 /**
  * 动态生成路由 - 前端方式

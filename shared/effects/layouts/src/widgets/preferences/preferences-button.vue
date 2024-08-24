@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Settings } from '@bim/icons';
-import { BimIconButton } from '@bim-core/shadcn-ui';
+import { Settings } from '@micro/icons';
+import { BimIconButton } from '@micro-core/shadcn-ui';
 
 import Preferences from './preferences.vue';
 </script>

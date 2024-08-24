@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@bim/tsconfig/web.json",
+  "extends": "@micro/tsconfig/web.json",
   "compilerOptions": {
-    "types": ["vite/client", "@bim/types/global"]
+    "types": ["vite/client", "@micro/types/global"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { h, onMounted, onUnmounted, ref } from 'vue';
 
-import { $t } from '@bim/locales';
-import { ToastAction, useToast } from '@bim-core/shadcn-ui';
+import { $t } from '@micro/locales';
+import { ToastAction, useToast } from '@micro-core/shadcn-ui';
 
 interface Props {
   // 轮训时间，分钟

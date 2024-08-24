@@ -13,7 +13,7 @@ import {
   outputJSON,
   readJSON,
   UNICODE,
-} from '@bim/node-utils';
+} from '@micro/node-utils';
 
 import { publint } from 'publint';
 import { formatMessage } from 'publint/utils';

@@ -1,4 +1,4 @@
-import type { BuiltinThemeType } from '@bim-core/typings';
+import type { BuiltinThemeType } from '@micro-core/typings';
 
 interface BuiltinThemePreset {
   color: string;

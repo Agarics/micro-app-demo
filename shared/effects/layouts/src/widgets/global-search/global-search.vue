@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@bim/types';
+import type { MenuRecordRaw } from '@micro/types';
 
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
@@ -9,9 +9,9 @@ import {
   CornerDownLeft,
   MdiKeyboardEsc,
   Search,
-} from '@bim/icons';
-import { $t } from '@bim/locales';
-import { isWindowsOs } from '@bim/utils';
+} from '@micro/icons';
+import { $t } from '@micro/locales';
+import { isWindowsOs } from '@micro/utils';
 import {
   Dialog,
   DialogContent,
@@ -20,7 +20,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import { useMagicKeys, useToggle, whenever } from '@vueuse/core';
 

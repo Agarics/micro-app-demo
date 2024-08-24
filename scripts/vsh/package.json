@@ -1,5 +1,5 @@
 {
-  "name": "@bim/vsh",
+  "name": "@micro/vsh",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -21,7 +21,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@bim/node-utils": "workspace:*",
+    "@micro/node-utils": "workspace:*",
     "cac": "^6.7.14",
     "circular-dependency-scanner": "^2.2.2",
     "depcheck": "^1.4.7",

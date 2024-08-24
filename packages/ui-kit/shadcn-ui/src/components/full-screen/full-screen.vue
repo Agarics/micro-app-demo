@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Maximize, Minimize } from '@bim-core/icons';
+import { Maximize, Minimize } from '@micro-core/icons';
 
 import { useFullscreen } from '@vueuse/core';
 

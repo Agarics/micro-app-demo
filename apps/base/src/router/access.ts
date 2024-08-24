@@ -1,10 +1,10 @@
 import type {
   ComponentRecordType,
   GenerateMenuAndRoutesOptions,
-} from '@bim/types';
+} from '@micro/types';
 
-import { generateAccessible } from '@bim/access';
-import { preferences } from '@bim/preferences';
+import { generateAccessible } from '@micro/access';
+import { preferences } from '@micro/preferences';
 
 import { getAllMenusApi } from '~/api';
 import { $t } from '~/locales';

@@ -1,5 +1,5 @@
 {
-  "name": "@bim/preferences",
+  "name": "@micro/preferences",
   "version": "5.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,7 +12,7 @@
     }
   },
   "dependencies": {
-    "@bim-core/preferences": "workspace:*",
-    "@bim-core/typings": "workspace:*"
+    "@micro-core/preferences": "workspace:*",
+    "@micro-core/typings": "workspace:*"
   }
 }

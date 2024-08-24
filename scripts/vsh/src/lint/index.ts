@@ -1,6 +1,6 @@
 import type { CAC } from 'cac';
 
-import { execaCommand } from '@bim/node-utils';
+import { execaCommand } from '@micro/node-utils';
 
 interface LintCommandOptions {
   /**

@@ -2,7 +2,7 @@ import type { CAC } from 'cac';
 
 import { extname } from 'node:path';
 
-import { getStagedFiles } from '@bim/node-utils';
+import { getStagedFiles } from '@micro/node-utils';
 
 import { circularDepsDetect, printCircles } from 'circular-dependency-scanner';
 

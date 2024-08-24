@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { BasicLayout } from '@bim/layouts';
+import { BasicLayout } from '@micro/layouts';
 </script>
 
 <template>

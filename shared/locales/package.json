@@ -1,5 +1,5 @@
 {
-  "name": "@bim/locales",
+  "name": "@micro/locales",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,8 +12,8 @@
     }
   },
   "dependencies": {
-    "@intlify/core-base": "^9.13.1",
+    "@intlify/core-base": "^9.14.0",
     "vue": "^3.4.38",
-    "vue-i18n": "^9.13.1"
+    "vue-i18n": "^9.14.0"
   }
 }

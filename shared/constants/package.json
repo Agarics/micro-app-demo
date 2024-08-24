@@ -1,5 +1,5 @@
 {
-  "name": "@bim/constants",
+  "name": "@micro/constants",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,6 +12,6 @@
     }
   },
   "dependencies": {
-    "@bim-core/shared": "workspace:*"
+    "@micro-core/shared": "workspace:*"
   }
 }

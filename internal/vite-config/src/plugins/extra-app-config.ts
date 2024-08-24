@@ -1,6 +1,10 @@
 import type { PluginOption } from 'vite';
 
-import { colors, generatorContentHash, readPackageJSON } from '@bim/node-utils';
+import {
+  colors,
+  generatorContentHash,
+  readPackageJSON,
+} from '@micro/node-utils';
 
 import { loadEnv } from '../utils/env';
 

@@ -2,8 +2,8 @@
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@bim/locales';
-import { BimButton, BimInput } from '@bim-core/shadcn-ui';
+import { $t } from '@micro/locales';
+import { BimButton, BimInput } from '@micro-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { MenuRecordRaw } from '@bim/types';
-import type { MenuProps } from '@bim-core/menu-ui';
+import type { MenuRecordRaw } from '@micro/types';
+import type { MenuProps } from '@micro-core/menu-ui';
 
-import { Menu } from '@bim-core/menu-ui';
+import { Menu } from '@micro-core/menu-ui';
 
 interface Props extends MenuProps {
   menus?: MenuRecordRaw[];

@@ -1,5 +1,5 @@
 {
-  "name": "@bim/utils",
+  "name": "@micro/utils",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -14,8 +14,8 @@
     }
   },
   "dependencies": {
-    "@bim-core/shared": "workspace:*",
-    "@bim-core/typings": "workspace:*",
+    "@micro-core/shared": "workspace:*",
+    "@micro-core/typings": "workspace:*",
     "vue-router": "^4.4.3"
   }
 }

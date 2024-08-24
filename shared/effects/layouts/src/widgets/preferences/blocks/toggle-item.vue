@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { SelectOption } from '@bim/types';
+import type { SelectOption } from '@micro/types';
 
-import { ToggleGroup, ToggleGroupItem } from '@bim-core/shadcn-ui';
+import { ToggleGroup, ToggleGroupItem } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceToggleItem',

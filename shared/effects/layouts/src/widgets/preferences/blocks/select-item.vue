@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { SelectOption } from '@bim/types';
+import type { SelectOption } from '@micro/types';
 
 import { useSlots } from 'vue';
 
-import { CircleHelp } from '@bim/icons';
+import { CircleHelp } from '@micro/icons';
 import {
   BimTooltip,
   Select,
@@ -11,7 +11,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceSelectItem',

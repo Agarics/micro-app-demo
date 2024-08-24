@@ -1,1 +1,1 @@
-import '@bim-core/design';
+import '@micro-core/design';

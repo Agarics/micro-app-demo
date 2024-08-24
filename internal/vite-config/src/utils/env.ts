@@ -2,7 +2,7 @@ import type { ApplicationPluginOptions } from '../typing';
 
 import { join } from 'node:path';
 
-import { fs } from '@bim/node-utils';
+import { fs } from '@micro/node-utils';
 
 import dotenv from 'dotenv';
 

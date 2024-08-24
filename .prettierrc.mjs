@@ -1,1 +1,1 @@
-export { default } from '@bim/prettier-config';
+export { default } from '@micro/prettier-config';

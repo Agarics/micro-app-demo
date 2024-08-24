@@ -1,12 +1,12 @@
 /**
  * 该文件可自行根据业务逻辑进行调整
  */
-import type { HttpResponse } from '@bim/request';
+import type { HttpResponse } from '@micro/request';
 
-import { useAppConfig } from '@bim/hooks';
-import { preferences } from '@bim/preferences';
-import { RequestClient } from '@bim/request';
-import { useAccessStore } from '@bim/stores';
+import { useAppConfig } from '@micro/hooks';
+import { preferences } from '@micro/preferences';
+import { RequestClient } from '@micro/request';
+import { useAccessStore } from '@micro/stores';
 
 import { useAuthStore } from '~/store';
 import { ElMessage } from 'element-plus';

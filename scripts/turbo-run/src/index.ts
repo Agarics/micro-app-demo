@@ -1,4 +1,4 @@
-import { colors, consola } from '@bim/node-utils';
+import { colors, consola } from '@micro/node-utils';
 
 import { cac } from 'cac';
 

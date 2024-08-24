@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import type { TabOption } from '@bim/types';
+import type { TabOption } from '@micro/types';
 
 import { computed } from 'vue';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@bim-core/shadcn-ui';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@micro-core/shadcn-ui';
 
 interface Props {
   tabs: TabOption[];

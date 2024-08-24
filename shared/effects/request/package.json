@@ -1,5 +1,5 @@
 {
-  "name": "@bim/request",
+  "name": "@micro/request",
   "version": "1.0.0",
   "type": "module",
   "sideEffects": [
@@ -12,9 +12,9 @@
     }
   },
   "dependencies": {
-    "@bim/locales": "workspace:*",
-    "@bim/utils": "workspace:*",
-    "axios": "^1.7.4"
+    "@micro/locales": "workspace:*",
+    "@micro/utils": "workspace:*",
+    "axios": "^1.7.5"
   },
   "devDependencies": {
     "axios-mock-adapter": "^2.0.0"

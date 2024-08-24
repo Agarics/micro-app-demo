@@ -1,11 +1,11 @@
-import type { LoginAndRegisterParams } from '@bim/common-ui';
-import type { UserInfo } from '@bim/types';
+import type { LoginAndRegisterParams } from '@micro/common-ui';
+import type { UserInfo } from '@micro/types';
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { LOGIN_PATH } from '@bim/constants';
-import { resetAllStores, useAccessStore, useUserStore } from '@bim/stores';
+import { LOGIN_PATH } from '@micro/constants';
+import { resetAllStores, useAccessStore, useUserStore } from '@micro/stores';
 
 import { getAccessCodesApi, getUserInfoApi, loginApi } from '~/api';
 import { $t } from '~/locales';

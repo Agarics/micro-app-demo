@@ -1,6 +1,6 @@
 import { useRouter } from 'vue-router';
 
-import { useTabbarStore } from '@bim/stores';
+import { useTabbarStore } from '@micro/stores';
 
 export function useRefresh() {
   const router = useRouter();

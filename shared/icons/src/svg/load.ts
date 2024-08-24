@@ -1,7 +1,7 @@
 import {
   addIcon,
   // addCollection
-} from '@bim-core/icons';
+} from '@micro-core/icons';
 
 let loaded = false;
 if (!loaded) {

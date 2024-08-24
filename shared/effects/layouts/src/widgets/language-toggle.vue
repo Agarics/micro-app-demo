@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { SupportedLanguagesType } from '@bim/locales';
+import type { SupportedLanguagesType } from '@micro/locales';
 
-import { SUPPORT_LANGUAGES } from '@bim/constants';
-import { Languages } from '@bim/icons';
-import { loadLocaleMessages } from '@bim/locales';
-import { preferences, updatePreferences } from '@bim/preferences';
-import { BimDropdownRadioMenu, BimIconButton } from '@bim-core/shadcn-ui';
+import { SUPPORT_LANGUAGES } from '@micro/constants';
+import { Languages } from '@micro/icons';
+import { loadLocaleMessages } from '@micro/locales';
+import { preferences, updatePreferences } from '@micro/preferences';
+import { BimDropdownRadioMenu, BimIconButton } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'LanguageToggle',

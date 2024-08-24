@@ -1,5 +1,5 @@
-import type { IContextMenuItem } from '@bim-core/shadcn-ui';
-import type { TabDefinition, TabsStyleType } from '@bim-core/typings';
+import type { IContextMenuItem } from '@micro-core/shadcn-ui';
+import type { TabDefinition, TabsStyleType } from '@micro-core/typings';
 
 interface TabsProps {
   /**

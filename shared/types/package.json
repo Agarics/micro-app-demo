@@ -1,5 +1,5 @@
 {
-  "name": "@bim/types",
+  "name": "@micro/types",
   "version": "1.0.0",
   "type": "module",
   "exports": {
@@ -12,7 +12,7 @@
     }
   },
   "dependencies": {
-    "@bim-core/typings": "workspace:*",
+    "@micro-core/typings": "workspace:*",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   }

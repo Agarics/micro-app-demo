@@ -1,4 +1,4 @@
-import type { BasicUserInfo } from '@bim-core/typings';
+import type { BasicUserInfo } from '@micro-core/typings';
 
 /** 用户信息 */
 interface UserInfo extends BasicUserInfo {

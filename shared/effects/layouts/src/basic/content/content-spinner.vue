@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { CSSProperties } from 'vue';
 
-import { BimSpinner } from '@bim-core/shadcn-ui';
+import { BimSpinner } from '@micro-core/shadcn-ui';
 
 import { useContentSpinner } from './use-content-spinner';
 

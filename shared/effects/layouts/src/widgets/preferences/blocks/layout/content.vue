@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { type Component, computed } from 'vue';
 
-import { $t } from '@bim/locales';
+import { $t } from '@micro/locales';
 
 import { ContentCompact, ContentWide } from '../../icons';
 

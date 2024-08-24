@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import { loadLocaleMessages } from '@bim/locales';
-import { preferences, updatePreferences } from '@bim/preferences';
-import { capitalizeFirstLetter } from '@bim/utils';
+import { loadLocaleMessages } from '@micro/locales';
+import { preferences, updatePreferences } from '@micro/preferences';
+import { capitalizeFirstLetter } from '@micro/utils';
 
 import PreferencesSheet from './preferences-sheet.vue';
 

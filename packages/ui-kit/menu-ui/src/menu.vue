@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@bim-core/typings';
+import type { MenuRecordRaw } from '@micro-core/typings';
 
 import type { MenuProps } from './interface';
 
-import { useForwardProps } from '@bim-core/composables';
+import { useForwardProps } from '@micro-core/composables';
 
 import { Menu } from './components';
 import SubMenu from './sub-menu.vue';

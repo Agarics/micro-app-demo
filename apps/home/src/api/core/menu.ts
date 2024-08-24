@@ -1,4 +1,4 @@
-import type { RouteRecordStringComponent } from '@bim/types';
+import type { RouteRecordStringComponent } from '@micro/types';
 
 import { requestClient } from '~/api/request';
 

@@ -1,7 +1,7 @@
-import type { ExRouteRecordRaw, MenuRecordRaw } from '@bim-core/typings';
+import type { ExRouteRecordRaw, MenuRecordRaw } from '@micro-core/typings';
 import type { Router, RouteRecordRaw } from 'vue-router';
 
-import { filterTree, mapTree } from '@bim-core/shared';
+import { filterTree, mapTree } from '@micro-core/shared';
 
 /**
  * 根据 routes 生成菜单列表

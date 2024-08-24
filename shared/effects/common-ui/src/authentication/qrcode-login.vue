@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@bim/locales';
-import { BimButton } from '@bim-core/shadcn-ui';
+import { $t } from '@micro/locales';
+import { BimButton } from '@micro-core/shadcn-ui';
 
 import { useQRCode } from '@vueuse/integrations/useQRCode';
 

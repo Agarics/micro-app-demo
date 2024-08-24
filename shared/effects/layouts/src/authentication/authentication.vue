@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-import { preferences } from '@bim/preferences';
+import { preferences } from '@micro/preferences';
 
 import AuthenticationFormView from './form.vue';
 import Toolbar from './toolbar.vue';

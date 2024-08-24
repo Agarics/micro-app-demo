@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { type Component, computed } from 'vue';
 
-import { Icon, IconDefault } from '@bim-core/icons';
-import { isFunction, isHttpUrl, isObject, isString } from '@bim-core/shared';
+import { Icon, IconDefault } from '@micro-core/icons';
+import { isFunction, isHttpUrl, isObject, isString } from '@micro-core/shared';
 
 const props = defineProps<{
   // 没有是否显示默认图标

@@ -1,6 +1,6 @@
 import { useRouter } from 'vue-router';
 
-import { isHttpUrl, openWindow } from '@bim/utils';
+import { isHttpUrl, openWindow } from '@micro/utils';
 
 function useNavigation() {
   const router = useRouter();

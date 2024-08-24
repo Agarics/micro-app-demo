@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@bim/tsconfig/web.json",
+  "extends": "@micro/tsconfig/web.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@bim-core/shadcn-ui/*": ["./src/*"]
+      "@micro-core/shadcn-ui/*": ["./src/*"]
     }
   },
   "include": ["src"],

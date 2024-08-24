@@ -1,5 +1,5 @@
 {
-  "name": "@bim/icons",
+  "name": "@micro/icons",
   "version": "1.0.0",
   "type": "module",
   "exports": {
@@ -9,6 +9,6 @@
     }
   },
   "dependencies": {
-    "@bim-core/icons": "workspace:*"
+    "@micro-core/icons": "workspace:*"
   }
 }

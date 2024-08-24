@@ -11,7 +11,7 @@ import {
   outputJSON,
   prettierFormat,
   toPosixPath,
-} from '@bim/node-utils';
+} from '@micro/node-utils';
 
 const CODE_WORKSPACE_FILE = join('bim-admin.code-workspace');
 

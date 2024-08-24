@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $t } from '@bim/locales';
+import { $t } from '@micro/locales';
 
 import NumberFieldItem from '../number-field-item.vue';
 import SwitchItem from '../switch-item.vue';

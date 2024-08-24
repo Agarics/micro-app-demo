@@ -3,9 +3,9 @@ import type { MenuItemProps } from '../interface';
 
 import { computed } from 'vue';
 
-import { useNamespace } from '@bim-core/composables';
-import { ChevronDown, ChevronRight } from '@bim-core/icons';
-import { BimIcon } from '@bim-core/shadcn-ui';
+import { useNamespace } from '@micro-core/composables';
+import { ChevronDown, ChevronRight } from '@micro-core/icons';
+import { BimIcon } from '@micro-core/shadcn-ui';
 
 import { useMenuContext } from '../hooks';
 

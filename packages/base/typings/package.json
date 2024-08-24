@@ -1,5 +1,5 @@
 {
-  "name": "@bim-core/typings",
+  "name": "@micro-core/typings",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

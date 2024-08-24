@@ -4,8 +4,8 @@ import type { LoginCodeEmits } from './typings';
 import { computed, onBeforeUnmount, reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@bim/locales';
-import { BimButton, BimInput, BimPinInput } from '@bim-core/shadcn-ui';
+import { $t } from '@micro/locales';
+import { BimButton, BimInput, BimPinInput } from '@micro-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 

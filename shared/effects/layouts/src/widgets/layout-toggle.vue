@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import type { AuthPageLayoutType } from '@bim/types';
-import type { BimDropdownMenuItem } from '@bim-core/shadcn-ui';
+import type { AuthPageLayoutType } from '@micro/types';
+import type { BimDropdownMenuItem } from '@micro-core/shadcn-ui';
 
 import { computed } from 'vue';
 
-import { InspectionPanel, PanelLeft, PanelRight } from '@bim/icons';
-import { $t } from '@bim/locales';
+import { InspectionPanel, PanelLeft, PanelRight } from '@micro/icons';
+import { $t } from '@micro/locales';
 import {
   preferences,
   updatePreferences,
   usePreferences,
-} from '@bim/preferences';
-import { BimDropdownRadioMenu, BimIconButton } from '@bim-core/shadcn-ui';
+} from '@micro/preferences';
+import { BimDropdownRadioMenu, BimIconButton } from '@micro-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationLayoutToggle',

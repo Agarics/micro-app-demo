@@ -1,11 +1,11 @@
-import type { MenuRecordRaw } from '@bim/types';
+import type { MenuRecordRaw } from '@micro/types';
 
 import { computed, onBeforeMount, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { preferences, usePreferences } from '@bim/preferences';
-import { useAccessStore } from '@bim/stores';
-import { findRootMenuByPath } from '@bim/utils';
+import { preferences, usePreferences } from '@micro/preferences';
+import { useAccessStore } from '@micro/stores';
+import { findRootMenuByPath } from '@micro/utils';
 
 import { useNavigation } from './use-navigation';
 

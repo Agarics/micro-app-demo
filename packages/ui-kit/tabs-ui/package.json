@@ -1,5 +1,5 @@
 {
-  "name": "@bim-core/tabs-ui",
+  "name": "@micro-core/tabs-ui",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -29,10 +29,10 @@
     }
   },
   "dependencies": {
-    "@bim-core/composables": "workspace:*",
-    "@bim-core/icons": "workspace:*",
-    "@bim-core/shadcn-ui": "workspace:*",
-    "@bim-core/typings": "workspace:*",
+    "@micro-core/composables": "workspace:*",
+    "@micro-core/icons": "workspace:*",
+    "@micro-core/shadcn-ui": "workspace:*",
+    "@micro-core/typings": "workspace:*",
     "vue": "^3.4.38"
   }
 }

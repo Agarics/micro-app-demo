@@ -1,4 +1,4 @@
-import { execaCommand, getPackages } from '@bim/node-utils';
+import { execaCommand, getPackages } from '@micro/node-utils';
 
 import { cancel, isCancel, select } from '@clack/prompts';
 

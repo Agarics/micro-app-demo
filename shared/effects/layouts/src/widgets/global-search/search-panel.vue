@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@bim/types';
+import type { MenuRecordRaw } from '@micro/types';
 
 import { nextTick, onMounted, ref, shallowRef, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { SearchX, X } from '@bim/icons';
-import { $t } from '@bim/locales';
-import { mapTree, traverseTreeValues, uniqueByField } from '@bim/utils';
-import { BimIcon, BimScrollbar } from '@bim-core/shadcn-ui';
+import { SearchX, X } from '@micro/icons';
+import { $t } from '@micro/locales';
+import { mapTree, traverseTreeValues, uniqueByField } from '@micro/utils';
+import { BimIcon, BimScrollbar } from '@micro-core/shadcn-ui';
 
 import { onKeyStroke, useLocalStorage, useThrottleFn } from '@vueuse/core';
 

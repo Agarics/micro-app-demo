@@ -1,6 +1,6 @@
 import { type RouteLocationNormalized, useRoute, useRouter } from 'vue-router';
 
-import { useTabbarStore } from '@bim/stores';
+import { useTabbarStore } from '@micro/stores';
 
 export function useTabs() {
   const router = useRouter();

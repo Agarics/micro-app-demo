@@ -1,4 +1,4 @@
 export default {
-  extends: ['@bim/stylelint-config'],
+  extends: ['@micro/stylelint-config'],
   root: true,
 };

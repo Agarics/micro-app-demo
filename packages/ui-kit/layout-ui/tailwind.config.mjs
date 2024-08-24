@@ -1,1 +1,1 @@
-export { default } from '@bim/tailwind-config';
+export { default } from '@micro/tailwind-config';

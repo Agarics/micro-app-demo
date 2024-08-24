@@ -1,5 +1,5 @@
 {
-  "name": "@bim-core/layout-ui",
+  "name": "@micro-core/layout-ui",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -29,11 +29,11 @@
     }
   },
   "dependencies": {
-    "@bim-core/composables": "workspace:*",
-    "@bim-core/icons": "workspace:*",
-    "@bim-core/shadcn-ui": "workspace:*",
-    "@bim-core/typings": "workspace:*",
-    "@vueuse/core": "^11.0.0",
+    "@micro-core/composables": "workspace:*",
+    "@micro-core/icons": "workspace:*",
+    "@micro-core/shadcn-ui": "workspace:*",
+    "@micro-core/typings": "workspace:*",
+    "@vueuse/core": "^11.0.1",
     "vue": "^3.4.38"
   }
 }

@@ -3,7 +3,7 @@ import type { Preferences } from './types';
 import {
   updateCSSVariables as executeUpdateCSSVariables,
   generatorColorVariables,
-} from '@bim-core/shared';
+} from '@micro-core/shared';
 
 import { BUILT_IN_THEME_PRESETS } from './constants';
 

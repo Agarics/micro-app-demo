@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MdiPin, MdiPinOff } from '@bim-core/icons';
+import { MdiPin, MdiPinOff } from '@micro-core/icons';
 
 const expandOnHover = defineModel<boolean>('expandOnHover');
 

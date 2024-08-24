@@ -3,7 +3,7 @@ import type { NumberFieldRootEmits, NumberFieldRootProps } from 'radix-vue';
 
 import { computed, type HTMLAttributes } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import { NumberFieldRoot, useForwardPropsEmits } from 'radix-vue';
 

@@ -4,7 +4,7 @@ import type { DefineApplicationOptions } from '../typing';
 
 import { relative } from 'node:path';
 
-import { findMonorepoRoot } from '@bim/node-utils';
+import { findMonorepoRoot } from '@micro/node-utils';
 
 import { defineConfig, loadEnv, mergeConfig } from 'vite';
 
@@ -96,7 +96,7 @@ function createCssOptions(injectGlobalScss = true) {
               const relativePath = relative(root, filepath);
               // apps下的包注入全局样式
               if (relativePath.startsWith('apps/')) {
-                return `@import "@bim/styles/global";\n${content}`;
+                return `@import "@micro/styles/global";\n${content}`;
               }
               return content;
             },

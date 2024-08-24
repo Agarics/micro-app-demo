@@ -1,7 +1,7 @@
 import type {
   ApplicationConfig,
   BimAdminProAppConfigRaw,
-} from '@bim/types/global';
+} from '@micro/types/global';
 
 /**
  * 由 vite-inject-app-config 注入的全局配置

@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { BuiltinThemeType } from '@bim/types';
+import type { BuiltinThemeType } from '@micro/types';
 
 import { computed, ref } from 'vue';
 
-import { UserRoundPen } from '@bim/icons';
-import { $t } from '@bim/locales';
+import { UserRoundPen } from '@micro/icons';
+import { $t } from '@micro/locales';
 import {
   BUILT_IN_THEME_PRESETS,
   type BuiltinThemePreset,
-} from '@bim/preferences';
-import { convertToHsl, TinyColor } from '@bim/utils';
+} from '@micro/preferences';
+import { convertToHsl, TinyColor } from '@micro/utils';
 
 defineOptions({
   name: 'PreferenceBuiltinTheme',

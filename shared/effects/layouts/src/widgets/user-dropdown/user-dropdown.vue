@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import type { AnyFunction } from '@bim/types';
+import type { AnyFunction } from '@micro/types';
 
 import type { Component } from 'vue';
 import { computed, ref } from 'vue';
 
-import { LockKeyhole, LogOut, SwatchBook } from '@bim/icons';
-import { $t } from '@bim/locales';
-import { preferences, usePreferences } from '@bim/preferences';
-import { useLockStore } from '@bim/stores';
-import { isWindowsOs } from '@bim/utils';
+import { LockKeyhole, LogOut, SwatchBook } from '@micro/icons';
+import { $t } from '@micro/locales';
+import { preferences, usePreferences } from '@micro/preferences';
+import { useLockStore } from '@micro/stores';
+import { isWindowsOs } from '@micro/utils';
 import {
   Badge,
   BimAlertDialog,
@@ -21,7 +21,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 

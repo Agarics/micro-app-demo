@@ -1,11 +1,14 @@
-import type { LocaleSetupOptions, SupportedLanguagesType } from '@bim/locales';
+import type {
+  LocaleSetupOptions,
+  SupportedLanguagesType,
+} from '@micro/locales';
 import type { Language } from 'element-plus/es/locale';
 
 import type { App } from 'vue';
 import { ref } from 'vue';
 
-import { $t, setupI18n as coreSetup, loadLocalesMap } from '@bim/locales';
-import { preferences } from '@bim/preferences';
+import { $t, setupI18n as coreSetup, loadLocalesMap } from '@micro/locales';
+import { preferences } from '@micro/preferences';
 
 import dayjs from 'dayjs';
 import enLocale from 'element-plus/es/locale/lang/en';

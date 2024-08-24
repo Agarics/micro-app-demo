@@ -1,4 +1,4 @@
-import type { UserInfo } from '@bim/types';
+import type { UserInfo } from '@micro/types';
 
 import { requestClient } from '~/api/request';
 

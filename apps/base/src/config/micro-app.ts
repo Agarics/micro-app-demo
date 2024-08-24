@@ -1,4 +1,4 @@
-import type { MicroApp } from '@bim/types';
+import type { MicroApp } from '@micro/types';
 
 // 子应用列表
 const appConfigList: MicroApp[] = [

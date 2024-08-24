@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { ThemeModeType } from '@bim/types';
+import type { ThemeModeType } from '@micro/types';
 
 import type { Component } from 'vue';
 
-import { MoonStar, Sun, SunMoon } from '@bim/icons';
-import { $t } from '@bim/locales';
+import { MoonStar, Sun, SunMoon } from '@micro/icons';
+import { $t } from '@micro/locales';
 
 import SwitchItem from '../switch-item.vue';
 

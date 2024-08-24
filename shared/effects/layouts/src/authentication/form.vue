@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { preferences } from '@bim/preferences';
+import { preferences } from '@micro/preferences';
 
 import { Copyright } from '../basic/copyright';
 

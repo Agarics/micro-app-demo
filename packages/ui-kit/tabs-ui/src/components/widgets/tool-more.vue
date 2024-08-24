@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { DropdownMenuProps } from '@bim-core/shadcn-ui';
+import type { DropdownMenuProps } from '@micro-core/shadcn-ui';
 
-import { ChevronDown } from '@bim-core/icons';
-import { BimDropdownMenu } from '@bim-core/shadcn-ui';
+import { ChevronDown } from '@micro-core/icons';
+import { BimDropdownMenu } from '@micro-core/shadcn-ui';
 
 defineProps<DropdownMenuProps>();
 </script>

@@ -1,7 +1,7 @@
 import { reactive, watch } from 'vue';
 
-import { preferences } from '@bim/preferences';
-import { convertToRgb, updateCSSVariables } from '@bim/utils';
+import { preferences } from '@micro/preferences';
+import { convertToRgb, updateCSSVariables } from '@micro/utils';
 
 /**
  * 用于适配各个框架的设计系统

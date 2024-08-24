@@ -5,7 +5,7 @@ import type { toggleVariants } from '../toggle';
 
 import { computed, type HTMLAttributes, provide } from 'vue';
 
-import { cn } from '@bim-core/shared';
+import { cn } from '@micro-core/shared';
 
 import {
   ToggleGroupRoot,

@@ -5,7 +5,7 @@ import type EchartsUI from './echarts-ui.vue';
 import type { Ref } from 'vue';
 import { computed, nextTick, watch } from 'vue';
 
-import { preferences, usePreferences } from '@bim/preferences';
+import { preferences, usePreferences } from '@micro/preferences';
 
 import {
   tryOnUnmounted,

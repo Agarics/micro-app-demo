@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Fallback } from '@bim/common-ui';
+import { Fallback } from '@micro/common-ui';
 
 defineOptions({ name: 'Fallback500Demo' });
 </script>

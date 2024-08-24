@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SupportedLanguagesType } from '@bim/locales';
+import type { SupportedLanguagesType } from '@micro/locales';
 import type {
   BreadcrumbStyleType,
   BuiltinThemeType,
@@ -9,26 +9,26 @@ import type {
   NavigationStyleType,
   PreferencesButtonPositionType,
   ThemeModeType,
-} from '@bim/types';
-import type { SegmentedItem } from '@bim-core/shadcn-ui';
+} from '@micro/types';
+import type { SegmentedItem } from '@micro-core/shadcn-ui';
 
 import { computed, ref } from 'vue';
 
-import { Copy, RotateCw, Settings } from '@bim/icons';
-import { $t, loadLocaleMessages } from '@bim/locales';
+import { Copy, RotateCw, Settings } from '@micro/icons';
+import { $t, loadLocaleMessages } from '@micro/locales';
 import {
   clearPreferencesCache,
   preferences,
   resetPreferences,
   usePreferences,
-} from '@bim/preferences';
+} from '@micro/preferences';
 import {
   BimButton,
   BimIconButton,
   BimSegmented,
   BimSheet,
   useToast,
-} from '@bim-core/shadcn-ui';
+} from '@micro-core/shadcn-ui';
 
 import { useClipboard } from '@vueuse/core';
 

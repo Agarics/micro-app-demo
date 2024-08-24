@@ -1,5 +1,5 @@
 {
-  "name": "@bim/prettier-config",
+  "name": "@micro/prettier-config",
   "version": "1.0.0",
   "private": true,
   "type": "module",

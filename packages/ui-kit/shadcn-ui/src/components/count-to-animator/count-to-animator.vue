@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref, unref, watch, watchEffect } from 'vue';
 
-import { isNumber } from '@bim-core/shared';
+import { isNumber } from '@micro-core/shared';
 
 import { TransitionPresets, useTransition } from '@vueuse/core';
 

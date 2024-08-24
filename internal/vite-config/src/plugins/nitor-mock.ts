@@ -2,7 +2,7 @@ import type { PluginOption } from 'vite';
 
 import type { NitroMockPluginOptions } from '../typing';
 
-import { colors, consola, getPackage } from '@bim/node-utils';
+import { colors, consola, getPackage } from '@micro/node-utils';
 
 import getPort from 'get-port';
 import { build, createDevServer, createNitro, prepare } from 'nitropack';
@@ -10,7 +10,7 @@ import { build, createDevServer, createNitro, prepare } from 'nitropack';
 const hmrKeyRe = /^runtimeConfig\.|routeRules\./;
 
 export const viteNitroMockPlugin = ({
-  mockServerPackage = '@bim/backend-mock',
+  mockServerPackage = '@micro/backend-mock',
   port = 5320,
   verbose = true,
 }: NitroMockPluginOptions = {}): PluginOption => {

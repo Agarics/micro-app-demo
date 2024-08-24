@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { IBreadcrumb } from './types';
 
-import { ChevronDown } from '@bim-core/icons';
+import { ChevronDown } from '@micro-core/icons';
 
 import { BimIcon } from '../icon';
 import {

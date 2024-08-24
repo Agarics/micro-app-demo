@@ -1,6 +1,6 @@
 import type { CAC } from 'cac';
 
-import { getPackages } from '@bim/node-utils';
+import { getPackages } from '@micro/node-utils';
 
 import depcheck from 'depcheck';
 
@@ -10,15 +10,15 @@ async function runDepcheck() {
     packages.map(async (pkg) => {
       if (
         [
-          '@bim/eslint-config',
-          '@bim/lint-staged-config',
-          '@bim/node-utils',
-          '@bim/prettier-config',
-          '@bim/stylelint-config',
-          '@bim/tailwind-config',
-          '@bim/tsconfig',
-          '@bim/vite-config',
-          '@bim/vsh',
+          '@micro/eslint-config',
+          '@micro/lint-staged-config',
+          '@micro/node-utils',
+          '@micro/prettier-config',
+          '@micro/stylelint-config',
+          '@micro/tailwind-config',
+          '@micro/tsconfig',
+          '@micro/vite-config',
+          '@micro/vsh',
         ].includes(pkg.packageJson.name)
       ) {
         return;
@@ -29,11 +29,11 @@ async function runDepcheck() {
           'vite',
           'vitest',
           'unbuild',
-          '@bim/tsconfig',
-          '@bim/vite-config',
-          '@bim/tailwind-config',
+          '@micro/tsconfig',
+          '@micro/vite-config',
+          '@micro/tailwind-config',
           '@types/*',
-          '@bim-core/design',
+          '@micro-core/design',
         ],
         ignorePatterns: ['dist', 'node_modules', 'public'],
       });
