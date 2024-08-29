@@ -90,14 +90,6 @@ function usePreferences() {
   });
 
   /**
-   * @zh_CN 是否开启keep-alive
-   * 在tabs可见以及开启keep-alive的情况下才开启
-   */
-  const keepAlive = computed(
-    () => preferences.tabbar.enable && preferences.tabbar.keepAlive,
-  );
-
-  /**
    * @zh_CN 登录注册页面布局是否为左侧
    */
   const authPanelLeft = computed(() => {
@@ -175,7 +167,6 @@ function usePreferences() {
     isSideMixedNav,
     isSideMode,
     isSideNav,
-    keepAlive,
     layout,
     sidebarCollapsed,
     theme,

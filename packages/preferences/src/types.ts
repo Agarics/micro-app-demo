@@ -11,7 +11,6 @@ import type {
   NavigationStyleType,
   PageTransitionType,
   PreferencesButtonPositionType,
-  TabsStyleType,
   ThemeModeType,
 } from '@micro-core/typings';
 
@@ -148,29 +147,6 @@ interface ShortcutKeyPreferences {
   globalSearch: boolean;
 }
 
-interface TabbarPreferences {
-  /** 是否开启多标签页拖拽 */
-  dragable: boolean;
-  /** 是否开启多标签页 */
-  enable: boolean;
-  /** 标签页高度 */
-  height: number;
-  /** 开启标签页缓存功能 */
-  keepAlive: boolean;
-  /** 是否持久化标签 */
-  persist: boolean;
-  /** 是否开启多标签页图标 */
-  showIcon: boolean;
-  /** 显示最大化按钮 */
-  showMaximize: boolean;
-  /** 显示更多按钮 */
-  showMore: boolean;
-  /** 显示刷新按钮 */
-  showRefresh: boolean;
-  /** 标签页风格 */
-  styleType: TabsStyleType;
-}
-
 interface ThemePreferences {
   /** 内置主题名 */
   builtinType: BuiltinThemeType;
@@ -239,8 +215,6 @@ interface Preferences {
   shortcutKeys: ShortcutKeyPreferences;
   /** 侧边栏配置 */
   sidebar: SidebarPreferences;
-  /** 标签页配置 */
-  tabbar: TabbarPreferences;
   /** 主题配置 */
   theme: ThemePreferences;
   /** 动画配置 */
@@ -268,7 +242,6 @@ export type {
   ShortcutKeyPreferences,
   SidebarPreferences,
   SupportedLanguagesType,
-  TabbarPreferences,
   ThemePreferences,
   TransitionPreferences,
   WidgetPreferences,

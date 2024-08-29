@@ -70,18 +70,6 @@ const defaultPreferences: Preferences = {
     hidden: false,
     width: 230,
   },
-  tabbar: {
-    dragable: true,
-    enable: true,
-    height: 36,
-    keepAlive: true,
-    persist: true,
-    showIcon: true,
-    showMaximize: true,
-    showMore: true,
-    showRefresh: true,
-    styleType: 'chrome',
-  },
   theme: {
     builtinType: 'default',
     colorDestructive: 'hsl(348 100% 61%)',

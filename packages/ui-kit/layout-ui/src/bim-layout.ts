@@ -147,16 +147,6 @@ interface BimLayoutProps {
    */
   sideCollapseWidth?: number;
   /**
-   * tab是否可见
-   * @default true
-   */
-  tabbarEnable?: boolean;
-  /**
-   * tab高度
-   * @default 30
-   */
-  tabbarHeight?: number;
-  /**
    * zIndex
    * @default 100
    */

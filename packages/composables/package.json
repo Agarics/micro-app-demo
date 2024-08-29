@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "@micro-core/shared": "workspace:*",
-    "@vueuse/core": "^11.0.1",
-    "radix-vue": "^1.9.4",
+    "@vueuse/core": "^11.0.3",
+    "radix-vue": "^1.9.5",
     "sortablejs": "^1.15.2",
     "vue": "^3.4.38"
   },

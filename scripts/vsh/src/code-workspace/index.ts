@@ -13,7 +13,7 @@ import {
   toPosixPath,
 } from '@micro/node-utils';
 
-const CODE_WORKSPACE_FILE = join('bim-admin.code-workspace');
+const CODE_WORKSPACE_FILE = join('micro-app.code-workspace');
 
 interface CodeWorkspaceCommandOptions {
   autoCommit?: boolean;

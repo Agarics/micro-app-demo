@@ -184,36 +184,6 @@
       "collapsed": "Collpase Menu",
       "collapsedShowTitle": "Show Menu Title"
     },
-    "tabbar": {
-      "title": "Tabbar",
-      "enable": "Enable Tab Bar",
-      "icon": "Show Tabbar Icon",
-      "showMore": "Show More Button",
-      "showRefresh": "Show Refresh Button",
-      "showMaximize": "Show Maximize Button",
-      "persist": "Persist Tabs",
-      "dragable": "Enable Dragable Sort",
-      "styleType": {
-        "title": "Tabs Style",
-        "chrome": "Chrome",
-        "card": "Card",
-        "plain": "Plain",
-        "brisk": "Brisk"
-      },
-      "contextMenu": {
-        "reload": "Reload",
-        "close": "Close",
-        "pin": "Pin",
-        "unpin": "Unpin",
-        "closeLeft": "Close Left Tabs",
-        "closeRight": "Close Right Tabs",
-        "closeOther": "Close Other Tabs",
-        "closeAll": "Close All Tabs",
-        "openInNewWindow": "Open in New Window",
-        "maximize": "Maximize",
-        "restoreMaximize": "Restore"
-      }
-    },
     "navigationMenu": {
       "title": "Navigation Menu",
       "style": "Navigation Menu Style",

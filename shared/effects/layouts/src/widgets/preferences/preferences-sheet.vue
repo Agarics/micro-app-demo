@@ -48,7 +48,6 @@ import {
   Navigation,
   Radius,
   Sidebar,
-  Tabbar,
   Theme,
   Widget,
 } from './blocks';
@@ -97,15 +96,6 @@ const breadcrumbStyleType = defineModel<BreadcrumbStyleType>(
   'breadcrumbStyleType',
 );
 const breadcrumbHideOnlyOne = defineModel<boolean>('breadcrumbHideOnlyOne');
-
-const tabbarEnable = defineModel<boolean>('tabbarEnable');
-const tabbarShowIcon = defineModel<boolean>('tabbarShowIcon');
-const tabbarShowMore = defineModel<boolean>('tabbarShowMore');
-const tabbarShowRefresh = defineModel<boolean>('tabbarShowRefresh');
-const tabbarShowMaximize = defineModel<boolean>('tabbarShowMaximize');
-const tabbarPersist = defineModel<boolean>('tabbarPersist');
-const tabbarDragable = defineModel<boolean>('tabbarDragable');
-const tabbarStyleType = defineModel<string>('tabbarStyleType');
 
 const navigationStyleType = defineModel<NavigationStyleType>(
   'navigationStyleType',
@@ -348,18 +338,6 @@ async function handleReset() {
                 :disabled="
                   !showBreadcrumbConfig || !(isSideNav || isSideMixedNav)
                 "
-              />
-            </Block>
-            <Block :title="$t('preferences.tabbar.title')">
-              <Tabbar
-                v-model:tabbar-dragable="tabbarDragable"
-                v-model:tabbar-enable="tabbarEnable"
-                v-model:tabbar-persist="tabbarPersist"
-                v-model:tabbar-show-icon="tabbarShowIcon"
-                v-model:tabbar-show-maximize="tabbarShowMaximize"
-                v-model:tabbar-show-more="tabbarShowMore"
-                v-model:tabbar-show-refresh="tabbarShowRefresh"
-                v-model:tabbar-style-type="tabbarStyleType"
               />
             </Block>
             <Block :title="$t('preferences.widget.title')">

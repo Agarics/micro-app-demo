@@ -15,7 +15,6 @@
     "@micro-core/layout-ui": "workspace:*",
     "@micro-core/menu-ui": "workspace:*",
     "@micro-core/shadcn-ui": "workspace:*",
-    "@micro-core/tabs-ui": "workspace:*",
     "@micro/constants": "workspace:*",
     "@micro/hooks": "workspace:*",
     "@micro/icons": "workspace:*",
@@ -24,7 +23,8 @@
     "@micro/stores": "workspace:*",
     "@micro/types": "workspace:*",
     "@micro/utils": "workspace:*",
-    "@vueuse/core": "^11.0.1",
+    "@vueuse/core": "^11.0.3",
+    "element-plus": "^2.8.1",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   }

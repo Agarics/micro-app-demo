@@ -81,10 +81,6 @@
       "path": "packages/ui-kit/shadcn-ui",
     },
     {
-      "name": "@micro-core/tabs-ui",
-      "path": "packages/ui-kit/tabs-ui",
-    },
-    {
       "name": "@micro/turbo-run",
       "path": "scripts/turbo-run",
     },
